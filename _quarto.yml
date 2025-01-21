@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: docs
-  
+
 website:
   title: "Algorithmic Trading Bot"
   navbar:
@@ -13,7 +13,7 @@ website:
         href: https://twitter.com
 format:
   html:
-    theme: cosmo
+    theme: pulse
     css: styles.css
 
 
