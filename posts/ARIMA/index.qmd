@@ -8,22 +8,88 @@ categories: [analysis, forecasting]
 How can we use ARIMA models for forecasting?
 
 # What Are ARIMA Models?
+Auto-Regression Intergation Moving Average models of ARIMA's for short are a statistical model used with time series data to attempt forecasting a value at the current time period from the previous time period.
 
-## Applications
+Auto-Regression Intergation Moving Average
+
+### Applications
+ARIMA models can be applied to any time series data, although the accuracy may vary. 
+Here's some use cases where time series data is most prevelent:
+- Stock market analysis
+- Weather Forecasting
+- Sales Forecasting
+- Website Traffic Analysis
+- Sensor Data
+- Healthcare Analytics
+
+As you can see there's lots of uses of time series data, most of which applying our ARIMA models would benefit.
 
 ## Packages Needed
+For this activity we will need the following packages
+```{python}
+#statsmodels
+# pandas 
+# plotly
+from statsmodel.graphics.tsaplots import plot_acf, plot_pacf
+from statsmodel.tsa.arima.model import ARIMA
+from statsmodels.tsa.stattools import adfuller
+
+from pandas as pd
+from plotly.express import px
+from plotly.graph_objects import go
+
+```
+
 
 ## Autocorrelation
 
+Correlation measures the relationship between two groups. Returning a number between -1 and 1. Where values closer to 1 has a strong positive relationship, values close to  -1 has a strong negative relationship, and values near zero show no relationship.
+
+- pictures displaying a strong negative relationship and a strong positive relationship
+    - maybe graph it?
+
+## Dickey-Fuller Test
+Null Hypotheis: Series isn't Stationary
+Alternate Hypothesis: Series is Stationary
+
+```{python}
+
+```
+
+- display an obviously non-stationary plot
+- display a stationary plot
+
+
+## Transformations to Stationary
+
 ## Autocorrelation Function
+
 
 ## Partial Auto-correlation Function
 
+
 ## ARIMA Model 
+
+- latex notation
 
 ## Defining Parameters
 
 ## Ploting Forecast
+
+## Determining Performance
+
+## Outside aspects
+
+### ARIMAX
+
+#### Exogeniuos Varibales
+
+### SARIMA
+
+#### Seasonal Components
+- decompose
+
+#### model Parameters
 
 
 
