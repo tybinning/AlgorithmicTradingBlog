@@ -1,0 +1,36 @@
+---
+title: "ARIMA Models: A Practical Guide"
+author: "Tyler Binning"
+date: "2025-01-22"
+categories: [analysis, forecasting]
+---
+
+How can we use ARIMA models for forecasting?
+
+# What Are ARIMA Models?
+
+## Applications
+
+## Packages Needed
+
+## Autocorrelation
+
+## Autocorrelation Function
+
+## Partial Auto-correlation Function
+
+## ARIMA Model 
+
+## Defining Parameters
+
+## Ploting Forecast
+
+
+
+- Autocorrelation
+- PACF
+- ACF
+- simple ARIMA
+- ARIMAX
+- SARIMAX
+- Seasonal decompose

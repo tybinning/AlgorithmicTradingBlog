@@ -2,9 +2,9 @@ project:
   type: website
   output-dir: docs
   theme: pulse 
-  
+
 website:
-  title: "Algorithmic Trading Bot"
+  title: "Algorithmic Trading Blog"
   navbar:
     right:
       - about.qmd
