@@ -7,11 +7,67 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "QuartoBlog",
+    "objectID": "posts/ARIMA/index.html",
+    "href": "posts/ARIMA/index.html",
+    "title": "ARIMA Models: A Practical Guide",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "How can we use ARIMA models for forecasting?"
+  },
+  {
+    "objectID": "posts/ARIMA/index.html#applications",
+    "href": "posts/ARIMA/index.html#applications",
+    "title": "ARIMA Models: A Practical Guide",
+    "section": "Applications",
+    "text": "Applications"
+  },
+  {
+    "objectID": "posts/ARIMA/index.html#packages-needed",
+    "href": "posts/ARIMA/index.html#packages-needed",
+    "title": "ARIMA Models: A Practical Guide",
+    "section": "Packages Needed",
+    "text": "Packages Needed"
+  },
+  {
+    "objectID": "posts/ARIMA/index.html#autocorrelation",
+    "href": "posts/ARIMA/index.html#autocorrelation",
+    "title": "ARIMA Models: A Practical Guide",
+    "section": "Autocorrelation",
+    "text": "Autocorrelation"
+  },
+  {
+    "objectID": "posts/ARIMA/index.html#autocorrelation-function",
+    "href": "posts/ARIMA/index.html#autocorrelation-function",
+    "title": "ARIMA Models: A Practical Guide",
+    "section": "Autocorrelation Function",
+    "text": "Autocorrelation Function"
+  },
+  {
+    "objectID": "posts/ARIMA/index.html#partial-auto-correlation-function",
+    "href": "posts/ARIMA/index.html#partial-auto-correlation-function",
+    "title": "ARIMA Models: A Practical Guide",
+    "section": "Partial Auto-correlation Function",
+    "text": "Partial Auto-correlation Function"
+  },
+  {
+    "objectID": "posts/ARIMA/index.html#arima-model",
+    "href": "posts/ARIMA/index.html#arima-model",
+    "title": "ARIMA Models: A Practical Guide",
+    "section": "ARIMA Model",
+    "text": "ARIMA Model"
+  },
+  {
+    "objectID": "posts/ARIMA/index.html#defining-parameters",
+    "href": "posts/ARIMA/index.html#defining-parameters",
+    "title": "ARIMA Models: A Practical Guide",
+    "section": "Defining Parameters",
+    "text": "Defining Parameters"
+  },
+  {
+    "objectID": "posts/ARIMA/index.html#ploting-forecast",
+    "href": "posts/ARIMA/index.html#ploting-forecast",
+    "title": "ARIMA Models: A Practical Guide",
+    "section": "Ploting Forecast",
+    "text": "Ploting Forecast\n\nAutocorrelation\nPACF\nACF\nsimple ARIMA\nARIMAX\nSARIMAX\nSeasonal decompose"
   },
   {
     "objectID": "about.html",
@@ -19,6 +75,13 @@
     "title": "About",
     "section": "",
     "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "QuartoBlog",
+    "section": "",
+    "text": "ARIMA Models: A Practical Guide\n\n\n\n\n\n\n\nanalysis\n\n\nforecasting\n\n\n\n\n\n\n\n\n\n\n\nJan 22, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
