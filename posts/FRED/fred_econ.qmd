@@ -1,0 +1,23 @@
+---
+title: "Collecting Macro Economic Data with FRED API"
+author: "Tyler Binning"
+format: html
+date: "2025-01-30"
+categories: [economic, data collection]
+---
+
+## FRED? 
+
+The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research. 
+
+**FRED** Stands for: **F**ederal **R**eserve**E**conomic**D**ata.
+
+## FRED API
+For my current Algorithmic trading project the FRED API will be significantly useful.
+
+For my project I am using `fredapi` which is a python wrapper around the Federal Reserve Bank of St. Louis's API. This allows for simpler documentation on my end.
+
+
+
+The code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull.
+

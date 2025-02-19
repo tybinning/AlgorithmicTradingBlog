@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html",
+    "href": "posts/FRED/fred_econ.html",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "",
+    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html#fred",
+    "href": "posts/FRED/fred_econ.html#fred",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "",
+    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html#fred-api",
+    "href": "posts/FRED/fred_econ.html#fred-api",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "FRED API",
+    "text": "FRED API\nFor my current Algorithmic trading project the FRED API will be significantly useful.\nFor my project I am using fredapi which is a python wrapper around the Federal Reserve Bank of St. Louis’s API. This allows for simpler documentation on my end.\nThe code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "QuartoBlog",
+    "section": "",
+    "text": "Collecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  }
+]

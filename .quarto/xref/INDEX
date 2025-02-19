@@ -13,5 +13,8 @@
   },
   "posts/ARIMA/index.qmd": {
     "index.html": "f6372aeb"
+  },
+  "posts/FRED/fred_econ.qmd": {
+    "fred_econ.html": "be3dfabb"
   }
 }
