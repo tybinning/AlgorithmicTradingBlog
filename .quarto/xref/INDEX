@@ -16,5 +16,8 @@
   },
   "posts/FRED/fred_econ.qmd": {
     "fred_econ.html": "be3dfabb"
+  },
+  "posts/AlgoTrading/algotradingbasics.qmd": {
+    "algotradingbasics.html": "4551130d"
   }
 }
