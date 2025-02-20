@@ -1,0 +1,33 @@
+---
+title: "What are ARIMA Models and How to Use Them?"
+author: "Tyler Binning"
+format: html
+date: "2025-02-19"
+categories: [Trading]
+---
+
+# ARIMA Model Basics
+
+## Autocorrelation
+
+## ACF
+
+## PACF
+
+## Importance of Stationarity
+
+
+
+# ARIMA Implemention
+
+## Packages Needed
+
+## Use Case with AAPL Stock Prices
+
+## Transformations
+
+# ARIMA Evalutation
+
+## Summary Results
+
+## Important Tests

@@ -1,0 +1,23 @@
+---
+title: "Evaluating Uses of ARIMA Models"
+author: "Tyler Binning"
+format: html
+date: "2025-02-19"
+categories: [Trading]
+---
+
+# ARIMA Review
+
+
+# Testing ARIMA Over Time Periods
+
+## Train Test Split for Time Series
+
+
+# ARIMA with XGBoost
+
+##
+
+# Evaulating Certainty with ARIMA Models
+
+## Probability of Price Range

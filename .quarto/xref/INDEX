@@ -22,5 +22,17 @@
   },
   "posts/PossibleStrats/possible_strats.qmd": {
     "possible_strats.html": "0e6fbcef"
+  },
+  "posts/ANOVA_ARIMA/ANOVA_ARIMA.qmd": {
+    "ANOVA_ARIMA.html": "6586e818"
+  },
+  "posts/ARIMA/ARIMA.qmd": {
+    "ARIMA.html": "5f3c924e"
+  },
+  "posts/Building_Dash/Building_Dash.qmd": {
+    "Building_Dash.html": "4fb73ec7"
+  },
+  "posts/TestingARIMA/tesing_Arima.qmd": {
+    "tesing_Arima.html": "14b39bb3"
   }
 }

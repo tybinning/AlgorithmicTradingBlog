@@ -2,7 +2,7 @@
 title: "Basic Strategies"
 author: "Tyler Binning"
 format: html
-date: "2025-02-20"
+date: "2025-02-19"
 categories: [Trading]
 ---
 

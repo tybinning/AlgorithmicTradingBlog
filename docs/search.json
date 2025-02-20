@@ -7,11 +7,67 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "posts/PossibleStrats/possible_strats.html",
-    "href": "posts/PossibleStrats/possible_strats.html",
-    "title": "Basic Strategies",
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
     "section": "",
-    "text": "Basic Strategies\nThis po"
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html",
+    "href": "posts/FRED/fred_econ.html",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "",
+    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html#fred",
+    "href": "posts/FRED/fred_econ.html#fred",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "",
+    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html#fred-api",
+    "href": "posts/FRED/fred_econ.html#fred-api",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "FRED API",
+    "text": "FRED API\nFor my current Algorithmic trading project the FRED API will be significantly useful.\nFor my project I am using fredapi which is a python wrapper around the Federal Reserve Bank of St. Louis’s API. This allows for simpler documentation on my end.\nThe code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull."
+  },
+  {
+    "objectID": "posts/ARIMA/ARIMA.html#packages-needed",
+    "href": "posts/ARIMA/ARIMA.html#packages-needed",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Packages Needed",
+    "text": "Packages Needed"
+  },
+  {
+    "objectID": "posts/ARIMA/ARIMA.html#use-case-with-aapl-stock-prices",
+    "href": "posts/ARIMA/ARIMA.html#use-case-with-aapl-stock-prices",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Use Case with AAPL Stock Prices",
+    "text": "Use Case with AAPL Stock Prices"
+  },
+  {
+    "objectID": "posts/ARIMA/ARIMA.html#transformations",
+    "href": "posts/ARIMA/ARIMA.html#transformations",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Transformations",
+    "text": "Transformations"
+  },
+  {
+    "objectID": "posts/ARIMA/ARIMA.html#summary-results",
+    "href": "posts/ARIMA/ARIMA.html#summary-results",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Summary Results",
+    "text": "Summary Results"
+  },
+  {
+    "objectID": "posts/ARIMA/ARIMA.html#important-tests",
+    "href": "posts/ARIMA/ARIMA.html#important-tests",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Important Tests",
+    "text": "Important Tests"
   },
   {
     "objectID": "posts/AlgoTrading/algotradingbasics.html",
@@ -32,7 +88,7 @@
     "href": "posts/AlgoTrading/algotradingbasics.html#allows-for-high-frequency-trading",
     "title": "Algorithmic Trading Basics",
     "section": "Allows for High Frequency Trading",
-    "text": "Allows for High Frequency Trading\nWith the use of Algorithmic Trading and Automated trading we can use strategies that wouldn’t be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are: - Arbitrage: Exploiting price differences between an index and its futures or underlying components - Order Book Imbalance: Trading based on real-time buy and sell order imbalances - Cross-Market Arbitrage: Exploting price differences across mulitple markets\nMost of these strategies involve some sort of arbitrage, taking advantage of difference in prices in two or more markets."
+    "text": "Allows for High Frequency Trading\nWith the use of Algorithmic Trading and Automated trading we can use strategies that wouldn’t be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are:\n- **Arbitrage:** Exploiting price differences between an index and its futures or underlying components\n\n- **Order Book Imbalance:** Trading based on real-time buy and sell order imbalances\n\n- **Cross-Market Arbitrage:** Exploting price differences across mulitple markets\nMost of these strategies involve some sort of arbitrage, taking advantage of difference in prices in two or more markets."
   },
   {
     "objectID": "posts/AlgoTrading/algotradingbasics.html#large-analysis-minimal-analysis-paralysis",
@@ -58,36 +114,43 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Algorithmic Trading Blog",
+    "title": "Home Page",
     "section": "",
-    "text": "Basic Strategies\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nAlgorithmic Trading Basics\n\n\n\n\n\n\n\nTrading Bot\n\n\nBasics\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nCollecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Algorithmic Trading Basics\n\n\n\n\n\n\n\nTrading Bot\n\n\nBasics\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nHyper Tuning ARIMA Parameters with Analysis of Variance\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nWhat are ARIMA Models and How to Use Them?\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBuilding a Simple Dash App\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBasic Strategies\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nEvaluating Uses of ARIMA Models\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nCollecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/FRED/fred_econ.html",
-    "href": "posts/FRED/fred_econ.html",
-    "title": "Collecting Macro Economic Data with FRED API",
+    "objectID": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
+    "href": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
+    "title": "Hyper Tuning ARIMA Parameters with Analysis of Variance",
     "section": "",
-    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+    "text": "What is an ANOVA?\n\n\nARIMA Review\n\n\nUsing ANOVA with ARIMA"
   },
   {
-    "objectID": "posts/FRED/fred_econ.html#fred",
-    "href": "posts/FRED/fred_econ.html#fred",
-    "title": "Collecting Macro Economic Data with FRED API",
+    "objectID": "posts/Building_Dash/Building_Dash.html",
+    "href": "posts/Building_Dash/Building_Dash.html",
+    "title": "Building a Simple Dash App",
     "section": "",
-    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+    "text": "Basic Components\n\n\nFormating\n\n\nSecurity\n\n\nCallbacks\n\n\nStyling"
   },
   {
-    "objectID": "posts/FRED/fred_econ.html#fred-api",
-    "href": "posts/FRED/fred_econ.html#fred-api",
-    "title": "Collecting Macro Economic Data with FRED API",
-    "section": "FRED API",
-    "text": "FRED API\nFor my current Algorithmic trading project the FRED API will be significantly useful.\nFor my project I am using fredapi which is a python wrapper around the Federal Reserve Bank of St. Louis’s API. This allows for simpler documentation on my end.\nThe code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull."
+    "objectID": "posts/PossibleStrats/possible_strats.html",
+    "href": "posts/PossibleStrats/possible_strats.html",
+    "title": "Basic Strategies",
+    "section": "",
+    "text": "Basic Strategies\nThis po"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
+    "objectID": "posts/TestingARIMA/tesing_Arima.html#train-test-split-for-time-series",
+    "href": "posts/TestingARIMA/tesing_Arima.html#train-test-split-for-time-series",
+    "title": "Evaluating Uses of ARIMA Models",
+    "section": "Train Test Split for Time Series",
+    "text": "Train Test Split for Time Series"
+  },
+  {
+    "objectID": "posts/TestingARIMA/tesing_Arima.html#probability-of-price-range",
+    "href": "posts/TestingARIMA/tesing_Arima.html#probability-of-price-range",
+    "title": "Evaluating Uses of ARIMA Models",
+    "section": "Probability of Price Range",
+    "text": "Probability of Price Range"
   }
 ]

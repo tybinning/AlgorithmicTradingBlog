@@ -2,8 +2,12 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/PossibleStrats/possible_strats.html",
       "/posts/AlgoTrading/algotradingbasics.html",
+      "/posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
+      "/posts/ARIMA/ARIMA.html",
+      "/posts/Building_Dash/Building_Dash.html",
+      "/posts/PossibleStrats/possible_strats.html",
+      "/posts/TestingARIMA/tesing_Arima.html",
       "/posts/FRED/fred_econ.html",
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
