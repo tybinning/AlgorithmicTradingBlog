@@ -3,7 +3,7 @@ title: "Algorithmic Trading Basics"
 author: "Tyler Binning"
 format: html
 date: "2025-02-19"
-categories: [Trading Bot, Finance]
+categories: [Trading Bot, Basics]
 ---
 
 Algorithmic Trading is automated trading at it's core.
@@ -12,7 +12,6 @@ Algorithmic Trading is automated trading at it's core.
 
 Algorithmic Trading is essentually the proccess of automating a trading strategy. 
 This has a few perks:
-
     - Takes out human error
     - Allows for time intensive strategies
     - Larger Analysis
@@ -34,7 +33,6 @@ We as human beings get into patterns of hope and dispare, having a machine handl
 ## Allows for High Frequency Trading
 
 With the use of Algorithmic Trading and Automated trading we can use strategies that wouldn't be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are:
-
     - **Arbitrage:** Exploiting price differences between an index and its futures or underlying components
     - **Order Book Imbalance:** Trading based on real-time buy and sell order imbalances
     - **Cross-Market Arbitrage:** Exploting price differences across mulitple markets

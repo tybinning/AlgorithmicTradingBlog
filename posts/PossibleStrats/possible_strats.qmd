@@ -1,0 +1,11 @@
+---
+title: "Basic Strategies"
+author: "Tyler Binning"
+format: html
+date: "2025-02-20"
+categories: [Trading]
+---
+
+# Basic Strategies
+
+This po

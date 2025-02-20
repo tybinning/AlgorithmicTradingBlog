@@ -1,5 +1,5 @@
 ---
-title: "QuartoBlog"
+title: "Algorithmic Trading Blog"
 listing:
   contents: posts
   sort: "date desc"

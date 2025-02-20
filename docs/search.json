@@ -7,39 +7,11 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "posts/FRED/fred_econ.html",
-    "href": "posts/FRED/fred_econ.html",
-    "title": "Collecting Macro Economic Data with FRED API",
+    "objectID": "posts/PossibleStrats/possible_strats.html",
+    "href": "posts/PossibleStrats/possible_strats.html",
+    "title": "Basic Strategies",
     "section": "",
-    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
-  },
-  {
-    "objectID": "posts/FRED/fred_econ.html#fred",
-    "href": "posts/FRED/fred_econ.html#fred",
-    "title": "Collecting Macro Economic Data with FRED API",
-    "section": "",
-    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
-  },
-  {
-    "objectID": "posts/FRED/fred_econ.html#fred-api",
-    "href": "posts/FRED/fred_econ.html#fred-api",
-    "title": "Collecting Macro Economic Data with FRED API",
-    "section": "FRED API",
-    "text": "FRED API\nFor my current Algorithmic trading project the FRED API will be significantly useful.\nFor my project I am using fredapi which is a python wrapper around the Federal Reserve Bank of St. Louis’s API. This allows for simpler documentation on my end.\nThe code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "QuartoBlog",
-    "section": "",
-    "text": "Algorithmic Trading Basics\n\n\n\n\n\n\n\nTrading Bot\n\n\nFinance\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nCollecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
+    "text": "Basic Strategies\nThis po"
   },
   {
     "objectID": "posts/AlgoTrading/algotradingbasics.html",
@@ -60,7 +32,7 @@
     "href": "posts/AlgoTrading/algotradingbasics.html#allows-for-high-frequency-trading",
     "title": "Algorithmic Trading Basics",
     "section": "Allows for High Frequency Trading",
-    "text": "Allows for High Frequency Trading\nWith the use of Algorithmic Trading and Automated trading we can use strategies that wouldn’t be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are:\n- **Arbitrage:** Exploiting price differences between an index and its futures or underlying components\n- **Order Book Imbalance:** Trading based on real-time buy and sell order imbalances\n- **Cross-Market Arbitrage:** Exploting price differences across mulitple markets\nMost of these strategies involve some sort of arbitrage, taking advantage of difference in prices in two or more markets."
+    "text": "Allows for High Frequency Trading\nWith the use of Algorithmic Trading and Automated trading we can use strategies that wouldn’t be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are: - Arbitrage: Exploiting price differences between an index and its futures or underlying components - Order Book Imbalance: Trading based on real-time buy and sell order imbalances - Cross-Market Arbitrage: Exploting price differences across mulitple markets\nMost of these strategies involve some sort of arbitrage, taking advantage of difference in prices in two or more markets."
   },
   {
     "objectID": "posts/AlgoTrading/algotradingbasics.html#large-analysis-minimal-analysis-paralysis",
@@ -75,6 +47,41 @@
     "title": "Algorithmic Trading Basics",
     "section": "Conclusion",
     "text": "Conclusion\nThere are many benefits of algorithmic trading, I prefer the concept of autonomy, and the prevention or analysis paraylysis. The biggest flaw an algorithmic trading bot has, is the flaws that we bake into it. This can amplify our investments in a positive or a negative direction. It is up to us how we build them."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Algorithmic Trading Blog",
+    "section": "",
+    "text": "Basic Strategies\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 20, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nAlgorithmic Trading Basics\n\n\n\n\n\n\n\nTrading Bot\n\n\nBasics\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nCollecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html",
+    "href": "posts/FRED/fred_econ.html",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "",
+    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html#fred",
+    "href": "posts/FRED/fred_econ.html#fred",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "",
+    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html#fred-api",
+    "href": "posts/FRED/fred_econ.html#fred-api",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "FRED API",
+    "text": "FRED API\nFor my current Algorithmic trading project the FRED API will be significantly useful.\nFor my project I am using fredapi which is a python wrapper around the Federal Reserve Bank of St. Louis’s API. This allows for simpler documentation on my end.\nThe code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull."
   },
   {
     "objectID": "posts/post-with-code/index.html",
