@@ -1,0 +1,120 @@
+---
+title: "Statistical Arbitrage Basics"
+author: "Tyler Binning"
+format: html
+date: "2025-02-24"
+categories: [Time Series, Stats]
+---
+
+# Statistical Arbitrage
+The purpose of this document is to be a collective on the basic ideas and strategies for StatArb. This will be set up for easy reference.
+
+## What is Statistical Arbitrage
+
+Involves exploiting pricing discrepancies or deviations from expected statistical relationships between related securities or financial instruments.
+
+The basic ideology is that certain relationships between securities tend to revert to their mean or exibit predictable patterns over time.
+
+
+## How?
+
+**Pair Selection:**  selecting groups of related securities believed to demonstrated statistical relationships. 
+Relationship can be based off: 
+    - historical price patterns
+    - correlation analysis
+    - fundamental characteristics
+
+**Model Dev:** model developed to estimate the expected behavior of the pair of securities. 
+Based off of:
+    - statistical techniques
+    - time sries analysis
+    - machine learning models
+    - quantitative methods
+
+**Deviation Detection:** model mnitors the prices or other relevant indicators, when a **deviation from the expected relaionship is detected** a trading signal is created. 
+Deviation can be measured through: 
+    - z-scores
+    - moving averages
+    - other indicators
+
+**Trade Execution:** Involves buying one security and selling another security. Aiming to capture price discreptancies
+
+**Risk Management:** Need to employ risk controls:
+    - stop-loss orders
+    - position sizing rules
+    - portfolio diversification
+
+
+## Methods for Pair Selection
+When selecting pairs we want to identify assests with high correlation. 
+A common example is Coca-Cola and PepsiCo as they have similar products and business models.
+There is a certain fundamental connection and a technical connection. 
+
+If the price relationship of the securities deviates from their long term average;
+"managers expecting the deviation to be temporary would go long on the underperforming stock (e.g., Coca-Cola) and simultaneously short the outperforming stock (e.g., PepsiCo). " (Analyst Prep)
+
+So we are looking at the relationship between two stocks and when the value of one moves out of a certain range around their average, then you expect the value of one to drop and the other to rise, to move back to the mean. 
+
+So you short the top, and buy go long on the bottom, expecting them to meet in the middle.
+
+How can we use ARIMA with this??
+Can we use the ARIMA to predict the average of two different securities, to determine where the price deviations may meet up in the future?
+
+### What is Cointegration?
+Conintegration is a measure of the relationship between several time series in the longterm.
+- Introducted by Robert Engle and Clive Granfer in 1987
+
+"Cointegration tests identify scenarios where two or more non-stationary time series are integrated together in a way that they cannot deviate from equilibrium in the long term. The tests are used to identify the degree of sensitivity of two variables to the same average price over a specified period of time."(CFI)
+
+By defination the cointegration test determines whether the securities can't deviate from each other in the long term. Which is great for our statisical arbitrage models, as we are just wanting to capture temporary discreptancies.
+
+To perform this test we leave the time series data as non-stationary.
+
+Could we use a ML model to help determine whether this is a temporary discreptancy or a long term change?
+
+### Testing Cointegration
+
+**1. Engle-Granger Two-Step Method**
+Limitations: 
+- if there are more than two variables, the method may show more than two cointegrated relationships
+- it's a single equation model
+
+**2.Johansen Test**
+Used to test cointegrating relationships between several nonpstationary time series data.
+Allows for more than one cointegrating relationship.
+small sample size would provide unreliable results
+
+Comes in two forms:
+
+-**Trace Tests**
+Tests the number of linear combinations in time series data
+
+$$
+H_0: K = K_0
+$$
+$$
+H_a: K > K_0
+$$
+
+
+
+-**Maximum Eigenvalue Test**
+$$
+H_0: K = K_0
+$$
+$$
+H_a: K = K_0 + 1
+$$
+
+## Model Dev
+
+## Trade Execution
+Q's: 
+Can we leverage options?
+
+## Risk Management
+
+# References
+https://www.cqf.com/blog/quant-finance-101/what-is-statistical-arbitrage 
+https://analystprep.com/study-notes/cfa-level-iii/statistical-arbitrage/#:~:text=A%20common%20and%20straightforward%20statistical,to%20their%20similar%20business%20models. 
+https://corporatefinanceinstitute.com/resources/data-science/cointegration/ 

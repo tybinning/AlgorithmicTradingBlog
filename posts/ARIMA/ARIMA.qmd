@@ -3,7 +3,7 @@ title: "What are ARIMA Models and How to Use Them?"
 author: "Tyler Binning"
 format: html
 date: "2025-02-19"
-categories: [Trading]
+categories: [Time Series, Stats]
 ---
 
 # ARIMA Model Basics

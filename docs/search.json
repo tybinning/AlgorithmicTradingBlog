@@ -35,39 +35,32 @@
     "text": "FRED API\nFor my current Algorithmic trading project the FRED API will be significantly useful.\nFor my project I am using fredapi which is a python wrapper around the Federal Reserve Bank of St. Louis’s API. This allows for simpler documentation on my end.\nThe code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull."
   },
   {
-    "objectID": "posts/ARIMA/ARIMA.html#packages-needed",
-    "href": "posts/ARIMA/ARIMA.html#packages-needed",
-    "title": "What are ARIMA Models and How to Use Them?",
-    "section": "Packages Needed",
-    "text": "Packages Needed"
+    "objectID": "posts/Building_Dash/Building_Dash.html",
+    "href": "posts/Building_Dash/Building_Dash.html",
+    "title": "Building a Simple Dash App",
+    "section": "",
+    "text": "Basic Components\n\n\nFormating\n\n\nSecurity\n\n\nCallbacks\n\n\nStyling"
   },
   {
-    "objectID": "posts/ARIMA/ARIMA.html#use-case-with-aapl-stock-prices",
-    "href": "posts/ARIMA/ARIMA.html#use-case-with-aapl-stock-prices",
-    "title": "What are ARIMA Models and How to Use Them?",
-    "section": "Use Case with AAPL Stock Prices",
-    "text": "Use Case with AAPL Stock Prices"
+    "objectID": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
+    "href": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
+    "title": "Hyper Tuning ARIMA Parameters with Analysis of Variance",
+    "section": "",
+    "text": "What is an ANOVA?\n\n\nARIMA Review\n\n\nUsing ANOVA with ARIMA"
   },
   {
-    "objectID": "posts/ARIMA/ARIMA.html#transformations",
-    "href": "posts/ARIMA/ARIMA.html#transformations",
-    "title": "What are ARIMA Models and How to Use Them?",
-    "section": "Transformations",
-    "text": "Transformations"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home Page",
+    "section": "",
+    "text": "Algorithmic Trading Basics\n\n\n\n\n\n\n\nTrading Bot\n\n\nBasics\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nHyper Tuning ARIMA Parameters with Analysis of Variance\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nWhat are ARIMA Models and How to Use Them?\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBuilding a Simple Dash App\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nEvaluating Congress Members Stock Reports\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBasic Strategies\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nEvaluating Uses of ARIMA Models\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nCollecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/ARIMA/ARIMA.html#summary-results",
-    "href": "posts/ARIMA/ARIMA.html#summary-results",
-    "title": "What are ARIMA Models and How to Use Them?",
-    "section": "Summary Results",
-    "text": "Summary Results"
-  },
-  {
-    "objectID": "posts/ARIMA/ARIMA.html#important-tests",
-    "href": "posts/ARIMA/ARIMA.html#important-tests",
-    "title": "What are ARIMA Models and How to Use Them?",
-    "section": "Important Tests",
-    "text": "Important Tests"
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
   },
   {
     "objectID": "posts/AlgoTrading/algotradingbasics.html",
@@ -105,32 +98,46 @@
     "text": "Conclusion\nThere are many benefits of algorithmic trading, I prefer the concept of autonomy, and the prevention or analysis paraylysis. The biggest flaw an algorithmic trading bot has, is the flaws that we bake into it. This can amplify our investments in a positive or a negative direction. It is up to us how we build them."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
+    "objectID": "posts/ARIMA/ARIMA.html#packages-needed",
+    "href": "posts/ARIMA/ARIMA.html#packages-needed",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Packages Needed",
+    "text": "Packages Needed"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home Page",
-    "section": "",
-    "text": "Algorithmic Trading Basics\n\n\n\n\n\n\n\nTrading Bot\n\n\nBasics\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nHyper Tuning ARIMA Parameters with Analysis of Variance\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nWhat are ARIMA Models and How to Use Them?\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBuilding a Simple Dash App\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBasic Strategies\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nEvaluating Uses of ARIMA Models\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nCollecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "objectID": "posts/ARIMA/ARIMA.html#use-case-with-aapl-stock-prices",
+    "href": "posts/ARIMA/ARIMA.html#use-case-with-aapl-stock-prices",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Use Case with AAPL Stock Prices",
+    "text": "Use Case with AAPL Stock Prices"
   },
   {
-    "objectID": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
-    "href": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
-    "title": "Hyper Tuning ARIMA Parameters with Analysis of Variance",
-    "section": "",
-    "text": "What is an ANOVA?\n\n\nARIMA Review\n\n\nUsing ANOVA with ARIMA"
+    "objectID": "posts/ARIMA/ARIMA.html#transformations",
+    "href": "posts/ARIMA/ARIMA.html#transformations",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Transformations",
+    "text": "Transformations"
   },
   {
-    "objectID": "posts/Building_Dash/Building_Dash.html",
-    "href": "posts/Building_Dash/Building_Dash.html",
-    "title": "Building a Simple Dash App",
+    "objectID": "posts/ARIMA/ARIMA.html#summary-results",
+    "href": "posts/ARIMA/ARIMA.html#summary-results",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Summary Results",
+    "text": "Summary Results"
+  },
+  {
+    "objectID": "posts/ARIMA/ARIMA.html#important-tests",
+    "href": "posts/ARIMA/ARIMA.html#important-tests",
+    "title": "What are ARIMA Models and How to Use Them?",
+    "section": "Important Tests",
+    "text": "Important Tests"
+  },
+  {
+    "objectID": "posts/congress_trade_analysis/congress_analysis.html",
+    "href": "posts/congress_trade_analysis/congress_analysis.html",
+    "title": "Evaluating Congress Members Stock Reports",
     "section": "",
-    "text": "Basic Components\n\n\nFormating\n\n\nSecurity\n\n\nCallbacks\n\n\nStyling"
+    "text": "Background\nMany of Senators or Representatives have inside knowledge of bills that will be passed indicating potentional price changes for stocks in different industries.\nFrom the recent popularity making certain politicians infamous for what is pretty much insider trading there have been bots/ apps created to invest automatically for you based off of different politicians needs. One important detail is that members of congress have 48 hours to file these reports.\nThe basis of this study isn’t to gain value off of the price due to policy, but more so a larger focus on the surge of mindless bots that buy stocks off of the decision of a politician.\nThis analysis is also to detail whether there is a connection between volume and price increase as compared to the overall increase due to policy change, is there a disconnect? Or would it be better to join the herd?\n\n\nAutopilot"
   },
   {
     "objectID": "posts/PossibleStrats/possible_strats.html",
