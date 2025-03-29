@@ -4,6 +4,7 @@ author: "Tyler Binning"
 format: html
 date: "2025-02-24"
 categories: [Time Series, Stats]
+image: "statarb.png"
 ---
 
 # Statistical Arbitrage

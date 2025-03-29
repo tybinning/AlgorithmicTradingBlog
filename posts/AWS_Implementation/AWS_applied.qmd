@@ -1,0 +1,8 @@
+---
+title: "Hosting Trades on AWS"
+author: "Tyler Binning"
+format: html
+date: "2025-02-19"
+categories: [Trading, AWS, Cloud Computing]
+image: "Plotly-logo.png"
+---

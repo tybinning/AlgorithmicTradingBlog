@@ -4,6 +4,7 @@ author: "Tyler Binning"
 format: html
 date: "2025-02-19"
 categories: [Trading Bot, Basics]
+image: 'stonks.png'
 ---
 
 Algorithmic Trading is automated trading at it's core.

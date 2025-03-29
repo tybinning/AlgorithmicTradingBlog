@@ -3,7 +3,8 @@ title: "Building a Simple Dash App"
 author: "Tyler Binning"
 format: html
 date: "2025-02-19"
-categories: [Trading]
+categories: [Trading, Visuals]
+image: "Plotly-logo.png"
 ---
 
 # Basic Components

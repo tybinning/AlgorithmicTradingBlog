@@ -2,18 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/GARCH/garch.html",
       "/posts/stat_arbitrage/stat_arb.html",
       "/posts/AlgoTrading/algotradingbasics.html",
-      "/posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
-      "/posts/ARIMA/ARIMA.html",
+      "/posts/AWS_Implementation/AWS_applied.html",
       "/posts/Building_Dash/Building_Dash.html",
-      "/posts/congress_trade_analysis/congress_analysis.html",
-      "/posts/PossibleStrats/possible_strats.html",
-      "/posts/TestingARIMA/tesing_Arima.html",
-      "/posts/FRED/fred_econ.html",
-      "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/PossibleStrats/possible_strats.html"
     ]
   }
 ]
