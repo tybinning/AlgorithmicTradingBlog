@@ -1,0 +1,21 @@
+---
+title: "QR Page"
+format: html
+---
+
+<!-- Wanting a page that allows for two blocks;
+ one for the Demo Link and Another 
+ that leads to the blog pages -->
+
+::: {.g-col-6 .g-row-6 .border style="text-align: center; padding: 10px; margin: 10px; border-radius: 15px; border-width: 2px; border-color: black;"}
+<a href=""><h3>Live Demo</h3>
+Click this link to view my live demo!
+</a>
+:::
+
+
+::: {.g-col-6 .g-row-6 .border style="text-align: center; padding: 10px; margin: 10px; border-radius: 15px; border-width: 2px; border-color: black;"}
+<a href="/index.qmd" ><h3>Blog</h3>
+Click this link to learn more about my project!
+</a>
+:::

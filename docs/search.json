@@ -1,10 +1,24 @@
 [
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "QRintro.html",
+    "href": "QRintro.html",
+    "title": "QR Page",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Live Demo\n\nClick this link to view my live demo! \n\n\n\n\nBlog\n\nClick this link to learn more about my project!"
+  },
+  {
+    "objectID": "posts/TestingARIMA/tesing_Arima.html#train-test-split-for-time-series",
+    "href": "posts/TestingARIMA/tesing_Arima.html#train-test-split-for-time-series",
+    "title": "Evaluating Uses of ARIMA Models",
+    "section": "Train Test Split for Time Series",
+    "text": "Train Test Split for Time Series"
+  },
+  {
+    "objectID": "posts/TestingARIMA/tesing_Arima.html#probability-of-price-range",
+    "href": "posts/TestingARIMA/tesing_Arima.html#probability-of-price-range",
+    "title": "Evaluating Uses of ARIMA Models",
+    "section": "Probability of Price Range",
+    "text": "Probability of Price Range"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -14,88 +28,18 @@
     "text": "This is a post with executable code."
   },
   {
-    "objectID": "posts/FRED/fred_econ.html",
-    "href": "posts/FRED/fred_econ.html",
-    "title": "Collecting Macro Economic Data with FRED API",
+    "objectID": "posts/GARCH/garch.html",
+    "href": "posts/GARCH/garch.html",
+    "title": "GARCH Basics",
     "section": "",
-    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+    "text": "What is GARCH?\nG.A.R.C.H. stands for: Generalized AutoRegressive COnditional Heteroskedasticity. GARCH is used to help predict teh volatility of returns on financial assets. This model helps analyze time-series data where the variance error is believed to be serially autocorrelated.\nFirms use the resulting information to help determine pricing and judge which assets will potentially provide higher returns, as well as to forecast the returns of current investments to help in their asset allocation, hedging, risk management, and portfolio optimization decisions.\nFixes problems regarding to heteroskedasticity.\nThis means that it is a function of an average of its own past values.\n\n\nExtra Info\nBuilt upon ARCH: AutoRegressive Conditional Heteroskedasticity. Assumes financial returns over time were not constant over time but autocorrelated, or conditional dependent on each other.\nThis demonstrated in stock returns where periods of volatility in returns tend to be clustered together.\n\nNGARCH: addresses correlation\nIGARCH: restricts the volatitlity parameter\nGARCH models are viewed to provide better gauges of risk than standard deviation alone\n\nARCH is a model used to analyze historical volatility in norder to predict future volatility. GARCH is an extenstion of ARCH model that allows for variance in the error term.\nHeteroskedasticity: when the error term changes over time."
   },
   {
-    "objectID": "posts/FRED/fred_econ.html#fred",
-    "href": "posts/FRED/fred_econ.html#fred",
-    "title": "Collecting Macro Economic Data with FRED API",
+    "objectID": "posts/congress_trade_analysis/congress_analysis.html",
+    "href": "posts/congress_trade_analysis/congress_analysis.html",
+    "title": "Evaluating Congress Members Stock Reports",
     "section": "",
-    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
-  },
-  {
-    "objectID": "posts/FRED/fred_econ.html#fred-api",
-    "href": "posts/FRED/fred_econ.html#fred-api",
-    "title": "Collecting Macro Economic Data with FRED API",
-    "section": "FRED API",
-    "text": "FRED API\nFor my current Algorithmic trading project the FRED API will be significantly useful.\nFor my project I am using fredapi which is a python wrapper around the Federal Reserve Bank of St. Louis’s API. This allows for simpler documentation on my end.\nThe code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull."
-  },
-  {
-    "objectID": "posts/Building_Dash/Building_Dash.html",
-    "href": "posts/Building_Dash/Building_Dash.html",
-    "title": "Building a Simple Dash App",
-    "section": "",
-    "text": "Basic Components\n\n\nFormating\n\n\nSecurity\n\n\nCallbacks\n\n\nStyling"
-  },
-  {
-    "objectID": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
-    "href": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
-    "title": "Hyper Tuning ARIMA Parameters with Analysis of Variance",
-    "section": "",
-    "text": "What is an ANOVA?\n\n\nARIMA Review\n\n\nUsing ANOVA with ARIMA"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home Page",
-    "section": "",
-    "text": "Algorithmic Trading Basics\n\n\n\n\n\n\n\nTrading Bot\n\n\nBasics\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nHyper Tuning ARIMA Parameters with Analysis of Variance\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nWhat are ARIMA Models and How to Use Them?\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBuilding a Simple Dash App\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nEvaluating Congress Members Stock Reports\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBasic Strategies\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nEvaluating Uses of ARIMA Models\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nCollecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/AlgoTrading/algotradingbasics.html",
-    "href": "posts/AlgoTrading/algotradingbasics.html",
-    "title": "Algorithmic Trading Basics",
-    "section": "",
-    "text": "Algorithmic Trading is automated trading at it’s core."
-  },
-  {
-    "objectID": "posts/AlgoTrading/algotradingbasics.html#human-error",
-    "href": "posts/AlgoTrading/algotradingbasics.html#human-error",
-    "title": "Algorithmic Trading Basics",
-    "section": "Human Error",
-    "text": "Human Error\nWhen trading a stock or security the goal is to make profit from when you enter the position to where you exit. If you are in a long position you will most likely have some sort of exit indicator that lets you kno when you need to sell, if the stock is still increasing in price that could be difficult.\nThe opposite can be true as well, if your stock is dropping in price and you sell prematurely the stock may rise after causing greif and loss.\n\nFOMO\nFOMO stands for the Fear Of Missing Out. This often comes into play when an individual sees stocks breaking record highs and have been increasing nonstop for the last few time periods, they decide to buy thinking this will never stop. The stock could continue to increase or it could start dropping.\nWhen the stock starts to drop people will hold on longer than they should, hoping that the price will rise again until they final sell, just to see the stock continuing to rise a few days after they sell.\nWe as human beings get into patterns of hope and dispare, having a machine handle trading allows us to take an emotional backseat and trust in the process that we have created."
-  },
-  {
-    "objectID": "posts/AlgoTrading/algotradingbasics.html#allows-for-high-frequency-trading",
-    "href": "posts/AlgoTrading/algotradingbasics.html#allows-for-high-frequency-trading",
-    "title": "Algorithmic Trading Basics",
-    "section": "Allows for High Frequency Trading",
-    "text": "Allows for High Frequency Trading\nWith the use of Algorithmic Trading and Automated trading we can use strategies that wouldn’t be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are:\n- **Arbitrage:** Exploiting price differences between an index and its futures or underlying components\n\n- **Order Book Imbalance:** Trading based on real-time buy and sell order imbalances\n\n- **Cross-Market Arbitrage:** Exploting price differences across mulitple markets\nMost of these strategies involve some sort of arbitrage, taking advantage of difference in prices in two or more markets."
-  },
-  {
-    "objectID": "posts/AlgoTrading/algotradingbasics.html#large-analysis-minimal-analysis-paralysis",
-    "href": "posts/AlgoTrading/algotradingbasics.html#large-analysis-minimal-analysis-paralysis",
-    "title": "Algorithmic Trading Basics",
-    "section": "Large Analysis ( Minimal Analysis Paralysis)",
-    "text": "Large Analysis ( Minimal Analysis Paralysis)\nWhen creating an Algorithmic Trading Bot you have the oppurtunity to allow it to evaluate multiple indicators, and resources before deciding on a strategy or a trade. It gives us more computing power within a smaller amount of time.\n\nAnalysis Paralysis\nAnalysis Paralysis is a concept of analyzing too so much data as to the point where you feel paralyzed not knowing with direction to go or how to react, as there is always a great degree of unknown price movement, expecially within stock prices. Sometimes you need to take action even when unsure of the result, Algo Trading aids in this behavior, allowing you to pull the trigger and take action."
-  },
-  {
-    "objectID": "posts/AlgoTrading/algotradingbasics.html#conclusion",
-    "href": "posts/AlgoTrading/algotradingbasics.html#conclusion",
-    "title": "Algorithmic Trading Basics",
-    "section": "Conclusion",
-    "text": "Conclusion\nThere are many benefits of algorithmic trading, I prefer the concept of autonomy, and the prevention or analysis paraylysis. The biggest flaw an algorithmic trading bot has, is the flaws that we bake into it. This can amplify our investments in a positive or a negative direction. It is up to us how we build them."
+    "text": "Background\nMany of Senators or Representatives have inside knowledge of bills that will be passed indicating potentional price changes for stocks in different industries.\nFrom the recent popularity making certain politicians infamous for what is pretty much insider trading there have been bots/ apps created to invest automatically for you based off of different politicians needs. One important detail is that members of congress have 48 hours to file these reports.\nThe basis of this study isn’t to gain value off of the price due to policy, but more so a larger focus on the surge of mindless bots that buy stocks off of the decision of a politician.\nThis analysis is also to detail whether there is a connection between volume and price increase as compared to the overall increase due to policy change, is there a disconnect? Or would it be better to join the herd?\n\n\nAutopilot"
   },
   {
     "objectID": "posts/ARIMA/ARIMA.html#packages-needed",
@@ -133,11 +77,88 @@
     "text": "Important Tests"
   },
   {
-    "objectID": "posts/congress_trade_analysis/congress_analysis.html",
-    "href": "posts/congress_trade_analysis/congress_analysis.html",
-    "title": "Evaluating Congress Members Stock Reports",
+    "objectID": "posts/AlgoTrading/algotradingbasics.html",
+    "href": "posts/AlgoTrading/algotradingbasics.html",
+    "title": "Algorithmic Trading Basics",
     "section": "",
-    "text": "Background\nMany of Senators or Representatives have inside knowledge of bills that will be passed indicating potentional price changes for stocks in different industries.\nFrom the recent popularity making certain politicians infamous for what is pretty much insider trading there have been bots/ apps created to invest automatically for you based off of different politicians needs. One important detail is that members of congress have 48 hours to file these reports.\nThe basis of this study isn’t to gain value off of the price due to policy, but more so a larger focus on the surge of mindless bots that buy stocks off of the decision of a politician.\nThis analysis is also to detail whether there is a connection between volume and price increase as compared to the overall increase due to policy change, is there a disconnect? Or would it be better to join the herd?\n\n\nAutopilot"
+    "text": "Algorithmic Trading is automated trading at it’s core."
+  },
+  {
+    "objectID": "posts/AlgoTrading/algotradingbasics.html#human-error",
+    "href": "posts/AlgoTrading/algotradingbasics.html#human-error",
+    "title": "Algorithmic Trading Basics",
+    "section": "Human Error",
+    "text": "Human Error\nWhen trading a stock or security the goal is to make profit from when you enter the position to where you exit. If you are in a long position you will most likely have some sort of exit indicator that lets you kno when you need to sell, if the stock is still increasing in price that could be difficult.\nThe opposite can be true as well, if your stock is dropping in price and you sell prematurely the stock may rise after causing greif and loss.\n\nFOMO\nFOMO stands for the Fear Of Missing Out. This often comes into play when an individual sees stocks breaking record highs and have been increasing nonstop for the last few time periods, they decide to buy thinking this will never stop. The stock could continue to increase or it could start dropping.\nWhen the stock starts to drop people will hold on longer than they should, hoping that the price will rise again until they final sell, just to see the stock continuing to rise a few days after they sell.\nWe as human beings get into patterns of hope and dispare, having a machine handle trading allows us to take an emotional backseat and trust in the process that we have created."
+  },
+  {
+    "objectID": "posts/AlgoTrading/algotradingbasics.html#allows-for-high-frequency-trading",
+    "href": "posts/AlgoTrading/algotradingbasics.html#allows-for-high-frequency-trading",
+    "title": "Algorithmic Trading Basics",
+    "section": "Allows for High Frequency Trading",
+    "text": "Allows for High Frequency Trading\nWith the use of Algorithmic Trading and Automated trading we can use strategies that wouldn’t be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are:\n- **Arbitrage:** Exploiting price differences between an index and its futures or underlying components\n\n- **Order Book Imbalance:** Trading based on real-time buy and sell order imbalances\n\n- **Cross-Market Arbitrage:** Exploting price differences across mulitple markets\nMost of these strategies involve some sort of arbitrage, taking advantage of difference in prices in two or more markets."
+  },
+  {
+    "objectID": "posts/AlgoTrading/algotradingbasics.html#large-analysis-minimal-analysis-paralysis",
+    "href": "posts/AlgoTrading/algotradingbasics.html#large-analysis-minimal-analysis-paralysis",
+    "title": "Algorithmic Trading Basics",
+    "section": "Large Analysis ( Minimal Analysis Paralysis)",
+    "text": "Large Analysis ( Minimal Analysis Paralysis)\nWhen creating an Algorithmic Trading Bot you have the oppurtunity to allow it to evaluate multiple indicators, and resources before deciding on a strategy or a trade. It gives us more computing power within a smaller amount of time.\n\nAnalysis Paralysis\nAnalysis Paralysis is a concept of analyzing too so much data as to the point where you feel paralyzed not knowing with direction to go or how to react, as there is always a great degree of unknown price movement, expecially within stock prices. Sometimes you need to take action even when unsure of the result, Algo Trading aids in this behavior, allowing you to pull the trigger and take action."
+  },
+  {
+    "objectID": "posts/AlgoTrading/algotradingbasics.html#conclusion",
+    "href": "posts/AlgoTrading/algotradingbasics.html#conclusion",
+    "title": "Algorithmic Trading Basics",
+    "section": "Conclusion",
+    "text": "Conclusion\nThere are many benefits of algorithmic trading, I prefer the concept of autonomy, and the prevention or analysis paraylysis. The biggest flaw an algorithmic trading bot has, is the flaws that we bake into it. This can amplify our investments in a positive or a negative direction. It is up to us how we build them."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi! I am Tyler an aspiring Data Scientist,\nThis Blog serves as part of my Senior Capstone Project at Brigham Young University of Idaho.\nMy Project entails developing and implementing an Algorithmic Trading Bot. I intially got interested in Data Science through a youth stock trading competition I enrolled in my Sophmore year of Highschool. Now I am returning to the world of financial data with a supercharged skill set.\nThere are mulitple blog posts covering basic concepts, idea exploration, and implementation of strategies."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home Page",
+    "section": "",
+    "text": "GARCH Basics\n\n\n\n\n\n\n\nTime Series\n\n\nPredictive Modeling\n\n\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nStatistical Arbitrage Basics\n\n\n\n\n\n\n\nTime Series\n\n\nStats\n\n\n\n\n\n\n\n\n\n\n\nFeb 24, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nAlgorithmic Trading Basics\n\n\n\n\n\n\n\nTrading Bot\n\n\nBasics\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nHyper Tuning ARIMA Parameters with Analysis of Variance\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nWhat are ARIMA Models and How to Use Them?\n\n\n\n\n\n\n\nTime Series\n\n\nStats\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBuilding a Simple Dash App\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nEvaluating Congress Members Stock Reports\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nBasic Strategies\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nEvaluating Uses of ARIMA Models\n\n\n\n\n\n\n\nTrading\n\n\n\n\n\n\n\n\n\n\n\nFeb 19, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nCollecting Macro Economic Data with FRED API\n\n\n\n\n\n\n\neconomic\n\n\ndata collection\n\n\n\n\n\n\n\n\n\n\n\nJan 30, 2025\n\n\nTyler Binning\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 18, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
+    "href": "posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
+    "title": "Hyper Tuning ARIMA Parameters with Analysis of Variance",
+    "section": "",
+    "text": "What is an ANOVA?\n\n\nARIMA Review\n\n\nUsing ANOVA with ARIMA"
+  },
+  {
+    "objectID": "posts/Building_Dash/Building_Dash.html",
+    "href": "posts/Building_Dash/Building_Dash.html",
+    "title": "Building a Simple Dash App",
+    "section": "",
+    "text": "Basic Components\n\n\nFormating\n\n\nSecurity\n\n\nCallbacks\n\n\nStyling"
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html",
+    "href": "posts/FRED/fred_econ.html",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "",
+    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html#fred",
+    "href": "posts/FRED/fred_econ.html#fred",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "",
+    "text": "The Federal Reserve Bank of St. Louis has numerious webservices that allow you to observe different economic data and research.\nFRED Stands for: Federal ReserveEconomicData."
+  },
+  {
+    "objectID": "posts/FRED/fred_econ.html#fred-api",
+    "href": "posts/FRED/fred_econ.html#fred-api",
+    "title": "Collecting Macro Economic Data with FRED API",
+    "section": "FRED API",
+    "text": "FRED API\nFor my current Algorithmic trading project the FRED API will be significantly useful.\nFor my project I am using fredapi which is a python wrapper around the Federal Reserve Bank of St. Louis’s API. This allows for simpler documentation on my end.\nThe code above demonstrates a sample of the GDP (Gross Domestic Product) data collected from our API pull."
   },
   {
     "objectID": "posts/PossibleStrats/possible_strats.html",
@@ -147,17 +168,45 @@
     "text": "Basic Strategies\nThis po"
   },
   {
-    "objectID": "posts/TestingARIMA/tesing_Arima.html#train-test-split-for-time-series",
-    "href": "posts/TestingARIMA/tesing_Arima.html#train-test-split-for-time-series",
-    "title": "Evaluating Uses of ARIMA Models",
-    "section": "Train Test Split for Time Series",
-    "text": "Train Test Split for Time Series"
+    "objectID": "posts/stat_arbitrage/stat_arb.html",
+    "href": "posts/stat_arbitrage/stat_arb.html",
+    "title": "Statistical Arbitrage Basics",
+    "section": "",
+    "text": "The purpose of this document is to be a collective on the basic ideas and strategies for StatArb. This will be set up for easy reference.\n\n\nInvolves exploiting pricing discrepancies or deviations from expected statistical relationships between related securities or financial instruments.\nThe basic ideology is that certain relationships between securities tend to revert to their mean or exibit predictable patterns over time.\n\n\n\nPair Selection: selecting groups of related securities believed to demonstrated statistical relationships. Relationship can be based off: - historical price patterns - correlation analysis - fundamental characteristics\nModel Dev: model developed to estimate the expected behavior of the pair of securities. Based off of: - statistical techniques - time sries analysis - machine learning models - quantitative methods\nDeviation Detection: model mnitors the prices or other relevant indicators, when a deviation from the expected relaionship is detected a trading signal is created. Deviation can be measured through: - z-scores - moving averages - other indicators\nTrade Execution: Involves buying one security and selling another security. Aiming to capture price discreptancies\nRisk Management: Need to employ risk controls: - stop-loss orders - position sizing rules - portfolio diversification\n\n\n\nWhen selecting pairs we want to identify assests with high correlation. A common example is Coca-Cola and PepsiCo as they have similar products and business models. There is a certain fundamental connection and a technical connection.\nIf the price relationship of the securities deviates from their long term average; “managers expecting the deviation to be temporary would go long on the underperforming stock (e.g., Coca-Cola) and simultaneously short the outperforming stock (e.g., PepsiCo).” (Analyst Prep)\nSo we are looking at the relationship between two stocks and when the value of one moves out of a certain range around their average, then you expect the value of one to drop and the other to rise, to move back to the mean.\nSo you short the top, and buy go long on the bottom, expecting them to meet in the middle.\nHow can we use ARIMA with this?? Can we use the ARIMA to predict the average of two different securities, to determine where the price deviations may meet up in the future?\n\n\nConintegration is a measure of the relationship between several time series in the longterm. - Introducted by Robert Engle and Clive Granfer in 1987\n“Cointegration tests identify scenarios where two or more non-stationary time series are integrated together in a way that they cannot deviate from equilibrium in the long term. The tests are used to identify the degree of sensitivity of two variables to the same average price over a specified period of time.”(CFI)\nBy defination the cointegration test determines whether the securities can’t deviate from each other in the long term. Which is great for our statisical arbitrage models, as we are just wanting to capture temporary discreptancies.\nTo perform this test we leave the time series data as non-stationary.\nCould we use a ML model to help determine whether this is a temporary discreptancy or a long term change?\n\n\n\n1. Engle-Granger Two-Step Method Limitations: - if there are more than two variables, the method may show more than two cointegrated relationships - it’s a single equation model\n2.Johansen Test Used to test cointegrating relationships between several nonpstationary time series data. Allows for more than one cointegrating relationship. small sample size would provide unreliable results\nComes in two forms:\n-Trace Tests Tests the number of linear combinations in time series data\n\\[\nH_0: K = K_0\n\\] \\[\nH_a: K &gt; K_0\n\\]\n-Maximum Eigenvalue Test \\[\nH_0: K = K_0\n\\] \\[\nH_a: K = K_0 + 1\n\\]\n\n\n\n\n\n\n\nQ’s: Can we leverage options?"
   },
   {
-    "objectID": "posts/TestingARIMA/tesing_Arima.html#probability-of-price-range",
-    "href": "posts/TestingARIMA/tesing_Arima.html#probability-of-price-range",
-    "title": "Evaluating Uses of ARIMA Models",
-    "section": "Probability of Price Range",
-    "text": "Probability of Price Range"
+    "objectID": "posts/stat_arbitrage/stat_arb.html#what-is-statistical-arbitrage",
+    "href": "posts/stat_arbitrage/stat_arb.html#what-is-statistical-arbitrage",
+    "title": "Statistical Arbitrage Basics",
+    "section": "",
+    "text": "Involves exploiting pricing discrepancies or deviations from expected statistical relationships between related securities or financial instruments.\nThe basic ideology is that certain relationships between securities tend to revert to their mean or exibit predictable patterns over time."
+  },
+  {
+    "objectID": "posts/stat_arbitrage/stat_arb.html#how",
+    "href": "posts/stat_arbitrage/stat_arb.html#how",
+    "title": "Statistical Arbitrage Basics",
+    "section": "",
+    "text": "Pair Selection: selecting groups of related securities believed to demonstrated statistical relationships. Relationship can be based off: - historical price patterns - correlation analysis - fundamental characteristics\nModel Dev: model developed to estimate the expected behavior of the pair of securities. Based off of: - statistical techniques - time sries analysis - machine learning models - quantitative methods\nDeviation Detection: model mnitors the prices or other relevant indicators, when a deviation from the expected relaionship is detected a trading signal is created. Deviation can be measured through: - z-scores - moving averages - other indicators\nTrade Execution: Involves buying one security and selling another security. Aiming to capture price discreptancies\nRisk Management: Need to employ risk controls: - stop-loss orders - position sizing rules - portfolio diversification"
+  },
+  {
+    "objectID": "posts/stat_arbitrage/stat_arb.html#methods-for-pair-selection",
+    "href": "posts/stat_arbitrage/stat_arb.html#methods-for-pair-selection",
+    "title": "Statistical Arbitrage Basics",
+    "section": "",
+    "text": "When selecting pairs we want to identify assests with high correlation. A common example is Coca-Cola and PepsiCo as they have similar products and business models. There is a certain fundamental connection and a technical connection.\nIf the price relationship of the securities deviates from their long term average; “managers expecting the deviation to be temporary would go long on the underperforming stock (e.g., Coca-Cola) and simultaneously short the outperforming stock (e.g., PepsiCo).” (Analyst Prep)\nSo we are looking at the relationship between two stocks and when the value of one moves out of a certain range around their average, then you expect the value of one to drop and the other to rise, to move back to the mean.\nSo you short the top, and buy go long on the bottom, expecting them to meet in the middle.\nHow can we use ARIMA with this?? Can we use the ARIMA to predict the average of two different securities, to determine where the price deviations may meet up in the future?\n\n\nConintegration is a measure of the relationship between several time series in the longterm. - Introducted by Robert Engle and Clive Granfer in 1987\n“Cointegration tests identify scenarios where two or more non-stationary time series are integrated together in a way that they cannot deviate from equilibrium in the long term. The tests are used to identify the degree of sensitivity of two variables to the same average price over a specified period of time.”(CFI)\nBy defination the cointegration test determines whether the securities can’t deviate from each other in the long term. Which is great for our statisical arbitrage models, as we are just wanting to capture temporary discreptancies.\nTo perform this test we leave the time series data as non-stationary.\nCould we use a ML model to help determine whether this is a temporary discreptancy or a long term change?\n\n\n\n1. Engle-Granger Two-Step Method Limitations: - if there are more than two variables, the method may show more than two cointegrated relationships - it’s a single equation model\n2.Johansen Test Used to test cointegrating relationships between several nonpstationary time series data. Allows for more than one cointegrating relationship. small sample size would provide unreliable results\nComes in two forms:\n-Trace Tests Tests the number of linear combinations in time series data\n\\[\nH_0: K = K_0\n\\] \\[\nH_a: K &gt; K_0\n\\]\n-Maximum Eigenvalue Test \\[\nH_0: K = K_0\n\\] \\[\nH_a: K = K_0 + 1\n\\]"
+  },
+  {
+    "objectID": "posts/stat_arbitrage/stat_arb.html#trade-execution",
+    "href": "posts/stat_arbitrage/stat_arb.html#trade-execution",
+    "title": "Statistical Arbitrage Basics",
+    "section": "",
+    "text": "Q’s: Can we leverage options?"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   }
 ]

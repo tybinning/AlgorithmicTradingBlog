@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tyler Binning">
-<meta name="dcterms.date" content="2025-02-19">
+<meta name="dcterms.date" content="2025-03-06">
 
-<title>Algorithmic Trading Blog - Evaluating Congress Members Stock Reports</title>
+<title>Algorithmic Trading Blog - GARCH Basics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,9 +112,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Evaluating Congress Members Stock Reports</h1>
+      <h1 class="title">GARCH Basics</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Trading</div>
+                <div class="quarto-category">Time Series</div>
+                <div class="quarto-category">Predictive Modeling</div>
               </div>
                   </div>
   </div>
@@ -132,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 19, 2025</p>
+        <p class="date">March 6, 2025</p>
       </div>
     </div>
     
@@ -150,15 +151,24 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="background" class="level1">
-<h1>Background</h1>
-<p>Many of Senators or Representatives have inside knowledge of bills that will be passed indicating potentional price changes for stocks in different industries.</p>
-<p>From the recent popularity making certain politicians infamous for what is pretty much insider trading there have been bots/ apps created to invest automatically for you based off of different politicians needs. One important detail is that members of congress have 48 hours to file these reports.</p>
-<p>The basis of this study isn’t to gain value off of the price due to policy, but more so a larger focus on the surge of mindless bots that buy stocks off of the decision of a politician.</p>
-<p>This analysis is also to detail whether there is a connection between volume and price increase as compared to the overall increase due to policy change, is there a disconnect? Or would it be better to join the herd?</p>
+<section id="what-is-garch" class="level1">
+<h1>What is GARCH?</h1>
+<p>G.A.R.C.H. stands for: Generalized AutoRegressive COnditional Heteroskedasticity. GARCH is used to help predict teh volatility of returns on financial assets. This model helps analyze time-series data where the variance error is believed to be serially autocorrelated.</p>
+<p>Firms use the resulting information to help determine pricing and judge which assets will potentially provide higher returns, as well as to forecast the returns of current investments to help in their asset allocation, hedging, risk management, and portfolio optimization decisions.</p>
+<p>Fixes problems regarding to heteroskedasticity.</p>
+<p>This means that it is a function of an average of its own past values.</p>
 </section>
-<section id="autopilot" class="level1">
-<h1>Autopilot</h1>
+<section id="extra-info" class="level1">
+<h1>Extra Info</h1>
+<p>Built upon ARCH: AutoRegressive Conditional Heteroskedasticity. Assumes financial returns over time were not constant over time but autocorrelated, or conditional dependent on each other.</p>
+<p>This demonstrated in stock returns where periods of volatility in returns tend to be clustered together.</p>
+<ul>
+<li><p>NGARCH: addresses correlation</p></li>
+<li><p>IGARCH: restricts the volatitlity parameter</p></li>
+<li><p>GARCH models are viewed to provide better gauges of risk than standard deviation alone</p></li>
+</ul>
+<p>ARCH is a model used to analyze historical volatility in norder to predict future volatility. GARCH is an extenstion of ARCH model that allows for variance in the error term.</p>
+<p>Heteroskedasticity: when the error term changes over time.</p>
 
 
 </section>

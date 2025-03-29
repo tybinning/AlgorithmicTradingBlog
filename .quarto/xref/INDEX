@@ -37,5 +37,14 @@
   },
   "posts/congress_trade_analysis/congress_analysis.qmd": {
     "congress_analysis.html": "4b2753d0"
+  },
+  "posts/GARCH/garch.qmd": {
+    "garch.html": "aa47faf7"
+  },
+  "posts/stat_arbitrage/stat_arb.qmd": {
+    "stat_arb.html": "ecfde103"
+  },
+  "QRintro.qmd": {
+    "QRintro.html": "f1c787e8"
   }
 }

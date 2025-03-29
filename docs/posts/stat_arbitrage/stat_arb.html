@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tyler Binning">
-<meta name="dcterms.date" content="2025-02-19">
+<meta name="dcterms.date" content="2025-02-24">
 
-<title>Algorithmic Trading Blog - Evaluating Congress Members Stock Reports</title>
+<title>Algorithmic Trading Blog - Statistical Arbitrage Basics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -62,6 +62,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -112,9 +114,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Evaluating Congress Members Stock Reports</h1>
+      <h1 class="title">Statistical Arbitrage Basics</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Trading</div>
+                <div class="quarto-category">Time Series</div>
+                <div class="quarto-category">Stats</div>
               </div>
                   </div>
   </div>
@@ -132,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 19, 2025</p>
+        <p class="date">February 24, 2025</p>
       </div>
     </div>
     
@@ -150,15 +153,69 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="background" class="level1">
-<h1>Background</h1>
-<p>Many of Senators or Representatives have inside knowledge of bills that will be passed indicating potentional price changes for stocks in different industries.</p>
-<p>From the recent popularity making certain politicians infamous for what is pretty much insider trading there have been bots/ apps created to invest automatically for you based off of different politicians needs. One important detail is that members of congress have 48 hours to file these reports.</p>
-<p>The basis of this study isn’t to gain value off of the price due to policy, but more so a larger focus on the surge of mindless bots that buy stocks off of the decision of a politician.</p>
-<p>This analysis is also to detail whether there is a connection between volume and price increase as compared to the overall increase due to policy change, is there a disconnect? Or would it be better to join the herd?</p>
+<section id="statistical-arbitrage" class="level1">
+<h1>Statistical Arbitrage</h1>
+<p>The purpose of this document is to be a collective on the basic ideas and strategies for StatArb. This will be set up for easy reference.</p>
+<section id="what-is-statistical-arbitrage" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-statistical-arbitrage">What is Statistical Arbitrage</h2>
+<p>Involves exploiting pricing discrepancies or deviations from expected statistical relationships between related securities or financial instruments.</p>
+<p>The basic ideology is that certain relationships between securities tend to revert to their mean or exibit predictable patterns over time.</p>
 </section>
-<section id="autopilot" class="level1">
-<h1>Autopilot</h1>
+<section id="how" class="level2">
+<h2 class="anchored" data-anchor-id="how">How?</h2>
+<p><strong>Pair Selection:</strong> selecting groups of related securities believed to demonstrated statistical relationships. Relationship can be based off: - historical price patterns - correlation analysis - fundamental characteristics</p>
+<p><strong>Model Dev:</strong> model developed to estimate the expected behavior of the pair of securities. Based off of: - statistical techniques - time sries analysis - machine learning models - quantitative methods</p>
+<p><strong>Deviation Detection:</strong> model mnitors the prices or other relevant indicators, when a <strong>deviation from the expected relaionship is detected</strong> a trading signal is created. Deviation can be measured through: - z-scores - moving averages - other indicators</p>
+<p><strong>Trade Execution:</strong> Involves buying one security and selling another security. Aiming to capture price discreptancies</p>
+<p><strong>Risk Management:</strong> Need to employ risk controls: - stop-loss orders - position sizing rules - portfolio diversification</p>
+</section>
+<section id="methods-for-pair-selection" class="level2">
+<h2 class="anchored" data-anchor-id="methods-for-pair-selection">Methods for Pair Selection</h2>
+<p>When selecting pairs we want to identify assests with high correlation. A common example is Coca-Cola and PepsiCo as they have similar products and business models. There is a certain fundamental connection and a technical connection.</p>
+<p>If the price relationship of the securities deviates from their long term average; “managers expecting the deviation to be temporary would go long on the underperforming stock (e.g., Coca-Cola) and simultaneously short the outperforming stock (e.g., PepsiCo).” (Analyst Prep)</p>
+<p>So we are looking at the relationship between two stocks and when the value of one moves out of a certain range around their average, then you expect the value of one to drop and the other to rise, to move back to the mean.</p>
+<p>So you short the top, and buy go long on the bottom, expecting them to meet in the middle.</p>
+<p>How can we use ARIMA with this?? Can we use the ARIMA to predict the average of two different securities, to determine where the price deviations may meet up in the future?</p>
+<section id="what-is-cointegration" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-cointegration">What is Cointegration?</h3>
+<p>Conintegration is a measure of the relationship between several time series in the longterm. - Introducted by Robert Engle and Clive Granfer in 1987</p>
+<p>“Cointegration tests identify scenarios where two or more non-stationary time series are integrated together in a way that they cannot deviate from equilibrium in the long term. The tests are used to identify the degree of sensitivity of two variables to the same average price over a specified period of time.”(CFI)</p>
+<p>By defination the cointegration test determines whether the securities can’t deviate from each other in the long term. Which is great for our statisical arbitrage models, as we are just wanting to capture temporary discreptancies.</p>
+<p>To perform this test we leave the time series data as non-stationary.</p>
+<p>Could we use a ML model to help determine whether this is a temporary discreptancy or a long term change?</p>
+</section>
+<section id="testing-cointegration" class="level3">
+<h3 class="anchored" data-anchor-id="testing-cointegration">Testing Cointegration</h3>
+<p><strong>1. Engle-Granger Two-Step Method</strong> Limitations: - if there are more than two variables, the method may show more than two cointegrated relationships - it’s a single equation model</p>
+<p><strong>2.Johansen Test</strong> Used to test cointegrating relationships between several nonpstationary time series data. Allows for more than one cointegrating relationship. small sample size would provide unreliable results</p>
+<p>Comes in two forms:</p>
+<p>-<strong>Trace Tests</strong> Tests the number of linear combinations in time series data</p>
+<p><span class="math display">\[
+H_0: K = K_0
+\]</span> <span class="math display">\[
+H_a: K &gt; K_0
+\]</span></p>
+<p>-<strong>Maximum Eigenvalue Test</strong> <span class="math display">\[
+H_0: K = K_0
+\]</span> <span class="math display">\[
+H_a: K = K_0 + 1
+\]</span></p>
+</section>
+</section>
+<section id="model-dev" class="level2">
+<h2 class="anchored" data-anchor-id="model-dev">Model Dev</h2>
+</section>
+<section id="trade-execution" class="level2">
+<h2 class="anchored" data-anchor-id="trade-execution">Trade Execution</h2>
+<p>Q’s: Can we leverage options?</p>
+</section>
+<section id="risk-management" class="level2">
+<h2 class="anchored" data-anchor-id="risk-management">Risk Management</h2>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p>https://www.cqf.com/blog/quant-finance-101/what-is-statistical-arbitrage https://analystprep.com/study-notes/cfa-level-iii/statistical-arbitrage/#:~:text=A%20common%20and%20straightforward%20statistical,to%20their%20similar%20business%20models. https://corporatefinanceinstitute.com/resources/data-science/cointegration/</p>
 
 
 </section>

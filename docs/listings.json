@@ -2,6 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/GARCH/garch.html",
+      "/posts/stat_arbitrage/stat_arb.html",
       "/posts/AlgoTrading/algotradingbasics.html",
       "/posts/ANOVA_ARIMA/ANOVA_ARIMA.html",
       "/posts/ARIMA/ARIMA.html",
