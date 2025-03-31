@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tyler Binning">
-<meta name="dcterms.date" content="2025-03-26">
+<meta name="dcterms.date" content="2025-03-29">
 
-<title>Algorithmic Trading Blog - Creating an EC2 instance</title>
+<title>Algorithmic Trading Blog - Lambda Functions for Stopping and Starting EC2 Instance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,11 +112,12 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Creating an EC2 instance</h1>
+      <h1 class="title">Lambda Functions for Stopping and Starting EC2 Instance</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Trading</div>
                 <div class="quarto-category">AWS</div>
-                <div class="quarto-category">EC2</div>
+                <div class="quarto-category">Lambda</div>
+                <div class="quarto-category">EventBridger</div>
               </div>
                   </div>
   </div>
@@ -134,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 26, 2025</p>
+        <p class="date">March 29, 2025</p>
       </div>
     </div>
     
@@ -152,25 +153,82 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="aws" class="level1">
-<h1>AWS</h1>
-<p>AWS stands for Amazon Web Services, they provide a number of cloud hosted services with inlcude cloud computing and database storage among other products. Our main focus is going to be on cloud computing and storage for the application with our trading bot. Amazons cloud compute service that we will be using is called <strong>EC2</strong> which stands for <strong>Elastic Compute Cloud</strong>.</p>
-<section id="ec2" class="level2">
-<h2 class="anchored" data-anchor-id="ec2">EC2</h2>
-<p>In order to run files on the cloud, we need to create our EC2 instance. To do this we: - login to our AWS console. - search “EC2” in the search bar - navigate to the EC2 dashboard - click launch intstance, clicking new</p>
-<section id="launching-instance" class="level3">
-<h3 class="anchored" data-anchor-id="launching-instance">Launching Instance</h3>
-<p>Once you have navigated to launching an instance you can choose your name for the instance - name photo</p>
-<p>From there you can choose the Operating System, I’ve choose Amazon Linux</p>
-<p>After choosing your OS then you will need to choose your instance type which is dictated by your specific compute needs and the intensity of what you will be running.</p>
-<p>The more computing power you choose the more expensive your monthly bill will be. That being said there are “Free tier eligible” instance types such as the t2.mirco instance type.</p>
-<p>You will also want to create a key pair and download it to your local computer as it will be need to connect your laptop or files to your instance in the future. This file will be saved as a .ppk file.</p>
-<p>From here you can manage your network settings, for this demo we will leave the default settings.</p>
-<p>You can then click launch instance and you will have created your first instance! Congrads!</p>
+<section id="intro" class="level1">
+<h1>Intro</h1>
+<p>EC2 instances can be expensive to run, expecially if left unchecked. As I am building a trading bot that is only going to be running during market hours.</p>
+<p>To do this we will be using two different tools within the AWS space: <strong>- Amazon EventBridger:</strong> Allows us to schedule lambda functions <strong>- Lambda:</strong> allows us to create event driven functions</p>
+</section>
+<section id="lambda" class="level1">
+<h1>Lambda</h1>
+<p>The purpose of lambda is to create event driven functions that can aid in numerous tasks.</p>
+<p>In order to create a lambda function we need to first navigate to the Lambda page within our AWS console.</p>
+<p>When we get to our page we need to click “Functions” Under the “Lambda” subheader on the left hand navigation bar.</p>
+<p>Then we can click the create function button.</p>
+<p>There are a few things that we need to do: - check that the “Author from scratch” box is checked - fill out the “Basic Information” section, ensuring that you name your function and adjust the language from the default of “Node.js 22.x” to the latest version of <strong>Python</strong>.</p>
+<p>From there we can click “Create function.”</p>
+<p>After you create your lambda function you will then need to navigate to the lambda functions page, as your were before.</p>
+<p>Click the instance that you just created From there you will navigate to “Code” under the Function Overview section</p>
+<p>Beneath the Code section your will see an editor with some basic code for an example.</p>
+<p>From there you will delete that code and replace it with the following:</p>
+<pre><code>import boto3
+change the region name below 
+region = 'us-east-2'
+#change the Instance ID 
+instances = ['i-**************']
+ec2 = boto3.client('ec2', region_name=region)
+
+def lambda_handler(event, context):
+    # Start instances
+    ec2.start_instances(InstanceIds=instances)
+    print(f"Started your instances: {instances}")</code></pre>
+<p>Some notes on the code:</p>
+<ul>
+<li>boto3 package is used for connect and control different AWS services. The code above is using it for ‘ec2’ as we can tell</li>
+<li>our function takes two inputs:
+<ul>
+<li>event</li>
+<li>context</li>
+</ul></li>
+</ul>
+<p>Within the function we start the ec2 instance with “ec2.start_instances()” the instance variable is your ec2 instance id which will be in a similar format to ‘i-**************’ and the region, will be the region which those instances are in, you can find both of these variables in your EC2 dashboard.</p>
+<p>Once you update your code ensure that you <strong>Deploy</strong> the code updating the function.</p>
+<p>Once you have updated and deployed your code we can test the function by going to the test section, and clicking “Test.”</p>
+<p>You should get an error, this is because we don’t have the right permissions.</p>
+<p>You need to navigate to the search bar and type “IAM.” IAM stands for Identity and Access Management, this page is used to control different users and role access for security purposes.</p>
+<p>In this you need to click “Roles” in the left nav bar. Within this section you will look for the name of your lambda function, click on your function. Search for <strong>AmazonEC2FullAccess</strong> we are using this for simplicity as if allows your lambda function full access to your EC2 instance, add it to the roles permissions.</p>
+<p>Now if we go back to our lambda function and test it, the test should produce positive results, we can ensure that our function is running by navigating to our EC2 dashboard.</p>
+<p>We want to create another lambda function to stop the EC2 as well, for this we will go through thesame steps, but using this code for the function instead:</p>
+<pre><code>import boto3
+change the region name below 
+region = 'us-east-2'
+#change the Instance ID 
+instances = ['i-**************']
+ec2 = boto3.client('ec2', region_name=region)
+
+def lambda_handler(event, context):
+    # Start instances
+    ec2.stop_instances(InstanceIds=instances)
+    print(f"Started your instances: {instances}")</code></pre>
+</section>
+<section id="eventbridger-schedule" class="level1">
+<h1>Eventbridger Schedule</h1>
+<p>For our trading bot, we only want our EC2 to be running during market times as we don’t want to spend money running it 24/7.</p>
+<p>Since our goal is to facilitate when our EC2 is running on a specified schedule we can use Eventbridger Schedule to schedule when our lambda functions run.</p>
+<p>To do this we need to navigate to the Amazon EventBridger page within the console.</p>
+<p>Once we’ve reached the page, you can scroll down to the “Get started” section of the page and click “Eventbridger Schedule” and Create rule.</p>
+<p>Once on this page we can give our schedule a name as well as a discription.</p>
+<p>Then move on to the schedule pattern page, since we are creating a recurring schedule we will click that section.</p>
+<p>From here we can dictate the time zone and our cron job expression, letting the scheduler know how often to run this job.</p>
+<p>Cron expressions are formatted as so: cron(<em>minutes </em>hours <em>day_of_month </em>month <em>days_of_week </em>year)</p>
+<p>If the specifics are unknown such as day of month, you can place a ?, if its applicable to all you can place an *.</p>
+<p>Since I want to have it run during stock market hours, I’ve changed the time zone to New York, and set the cron job to run every week day at 9 am:</p>
+<p>cron(0, 9, ?, *, 2-6, *)</p>
+<p>You can also choose how long you want this schedule to run in the time frame.</p>
+<p>Moving to the next page we will click AWS Lambda Invoke, to dictate that we are wanting the use this schedule on our lambda functions. Then we can choose the function we would like to Invoke, we will leave the json payload empty.</p>
+<p>Then we will click next until we can create our scheduler.</p>
+<p>Congrats you’ve learned the basics of scheduling a lambda function to run your EC2 based off a schedule.</p>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->

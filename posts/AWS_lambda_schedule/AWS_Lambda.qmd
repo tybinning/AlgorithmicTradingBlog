@@ -1,0 +1,125 @@
+---
+title: "Lambda Functions for Stopping and Starting EC2 Instance"
+author: "Tyler Binning"
+format: html
+date: "2025-03-29"
+categories: [Trading, AWS, Lambda, EventBridger]
+
+---
+
+# Intro
+EC2 instances can be expensive to run, expecially if left unchecked. As I am building a trading bot that is only going to be running during market hours. 
+
+To do this we will be using two different tools within the AWS space:
+**- Amazon EventBridger:** Allows us to schedule lambda functions
+**- Lambda:** allows us to create event driven functions 
+
+# Lambda
+The purpose of lambda is to create event driven functions that can aid in numerous tasks.
+
+In order to create a lambda function we need to first navigate to the Lambda page within our AWS console. 
+
+When we get to our page we need to click "Functions" Under the "Lambda" subheader on the left hand navigation bar. 
+
+Then we can click the create function button. 
+
+There are a few things that we need to do: 
+- check that the "Author from scratch" box is checked
+- fill out the "Basic Information" section, ensuring that you name your function and adjust the language from the default of "Node.js 22.x" to the latest version of **Python**.
+
+From there we can click "Create function."
+
+After you create your lambda function you will then need to navigate to the lambda functions page, as your were before.
+
+Click the instance that you just created
+From there you will navigate to "Code" under the Function Overview section
+
+Beneath the Code section your will see an editor with some basic code for an example.
+
+From there you will delete that code and replace it with the following:
+
+```
+import boto3
+change the region name below 
+region = 'us-east-2'
+#change the Instance ID 
+instances = ['i-**************']
+ec2 = boto3.client('ec2', region_name=region)
+
+def lambda_handler(event, context):
+    # Start instances
+    ec2.start_instances(InstanceIds=instances)
+    print(f"Started your instances: {instances}")
+```
+
+Some notes on the code: 
+
+- boto3 package is used for connect and control different AWS services. The code above is using it for 'ec2' as we can tell
+- our function takes two inputs:
+    - event
+    - context
+
+Within the function we start the ec2 instance with "ec2.start_instances()"
+the instance variable is your ec2 instance id which will be in a similar format to 'i-**************' and the region, will be the region which those instances are in, you can find both of these variables in your EC2 dashboard. 
+
+Once you update your code ensure that you **Deploy** the code updating the function.
+
+Once you have updated and deployed your code we can test the function by going to the test section, and clicking "Test."
+
+You should get an error, this is because we don't have the right permissions. 
+
+You need to navigate to the search bar and type "IAM." IAM stands for Identity and Access Management, this page is used to control different users and role access for security purposes. 
+
+In this you need to click "Roles" in the left nav bar. Within this section you will look for the name of your lambda function, click on your function. Search for **AmazonEC2FullAccess** we are using this for simplicity as if allows your lambda function full access to your EC2 instance, add it to the roles permissions.
+
+Now if we go back to our lambda function and test it, the test should produce positive results, we can ensure that our function is running by navigating to our EC2 dashboard.
+
+We want to create another lambda function to stop the EC2 as well, for this we will go through thesame steps, but using this code for the function instead:
+
+```
+import boto3
+change the region name below 
+region = 'us-east-2'
+#change the Instance ID 
+instances = ['i-**************']
+ec2 = boto3.client('ec2', region_name=region)
+
+def lambda_handler(event, context):
+    # Start instances
+    ec2.stop_instances(InstanceIds=instances)
+    print(f"Started your instances: {instances}")
+```
+
+# Eventbridger Schedule
+
+For our trading bot, we only want our EC2 to be running during market times as we don't want to spend money running it 24/7. 
+
+Since our goal is to facilitate when our EC2 is running on a specified schedule we can use Eventbridger Schedule to schedule when our lambda functions run. 
+
+To do this we need to navigate to the Amazon EventBridger page within the console.
+
+Once we've reached the page, you can scroll down to the "Get started" section of the page and click "Eventbridger Schedule" and Create rule. 
+
+Once on this page we can give our schedule a  name as well as a discription. 
+
+Then move on to the schedule pattern page, since we are creating a recurring schedule we will click that section. 
+
+
+From here we can dictate the time zone and our cron job expression, letting the scheduler know how often to run this job. 
+
+Cron expressions are formatted as so:
+cron(*minutes *hours *day_of_month *month *days_of_week *year)
+
+If the specifics are unknown such as day of month, you can place a ?, if its applicable to all you can place an *. 
+
+Since I want to have it run during stock market hours, I've changed the time zone to New York, and set the cron job to run every week day at 9 am:
+
+cron(0, 9, ?, \*, 2-6, \*)
+
+You can also choose how long you want this schedule to run in the time frame.
+
+Moving to the next page we will click AWS Lambda Invoke, to dictate that we are wanting the use this schedule on our lambda functions. Then we can choose the function we would like to Invoke, we will leave the json payload empty.
+
+Then we will click next until we can create our scheduler.
+
+Congrats you've learned the basics of scheduling a lambda function to run your EC2 based off a schedule.

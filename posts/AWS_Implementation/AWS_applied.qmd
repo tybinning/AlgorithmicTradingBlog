@@ -1,8 +1,39 @@
 ---
-title: "Hosting Trades on AWS"
+title: "Creating an EC2 instance"
 author: "Tyler Binning"
 format: html
-date: "2025-02-19"
-categories: [Trading, AWS, Cloud Computing]
-
+date: "2025-03-26"
+categories: [Trading, AWS, EC2]
 ---
+
+# AWS 
+AWS stands for Amazon Web Services, they provide a number of cloud hosted services with inlcude cloud computing and database storage among other products.
+Our main focus is going to be on cloud computing and storage for the application with our trading bot.
+Amazons cloud compute service that we will be using is called **EC2** which stands for **Elastic Compute Cloud**.
+
+## EC2 
+In order to run files on the cloud, we need to create our EC2 instance. 
+To do this we:
+- login to our AWS console. 
+- search "EC2" in the search bar
+- navigate to the EC2 dashboard
+- click launch intstance, clicking new
+
+### Launching Instance
+Once you have navigated to launching an instance you can choose your name for the instance
+- name photo
+
+From there you can choose the Operating System, I've choose Amazon Linux
+
+After choosing your OS then you will need to choose your instance type which is dictated by your 
+specific compute needs and the intensity of what you will be running. 
+
+The more computing power you choose the more expensive your monthly bill will be. 
+That being said there are "Free tier eligible" instance types such as the t2.mirco instance type.
+
+You will also want to create a key pair and download it to your local computer as it will be need to connect your laptop or files to your instance in the future.
+This file will be saved as a .ppk file.
+
+From here you can manage your network settings, for this demo we will leave the default settings.
+
+You can then click launch instance and you will have created your first instance! Congrads!

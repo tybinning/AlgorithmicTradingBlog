@@ -14,9 +14,9 @@ Algorithmic Trading is automated trading at it's core.
 Algorithmic Trading is essentually the proccess of automating a trading strategy. 
 This has a few perks:
 
-    - Takes out human error
-    - Allows for time intensive strategies
-    - Larger Analysis
+- Takes out human error
+- Allows for time intensive strategies
+- Larger Analysis
 
 ## Human Error
 
@@ -36,11 +36,11 @@ We as human beings get into patterns of hope and dispare, having a machine handl
 
 With the use of Algorithmic Trading and Automated trading we can use strategies that wouldn't be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are:
 
-    - **Arbitrage:** Exploiting price differences between an index and its futures or underlying components
+- **Arbitrage:** Exploiting price differences between an index and its futures or underlying components
 
-    - **Order Book Imbalance:** Trading based on real-time buy and sell order imbalances
+- **Order Book Imbalance:** Trading based on real-time buy and sell order imbalances
 
-    - **Cross-Market Arbitrage:** Exploting price differences across mulitple markets
+- **Cross-Market Arbitrage:** Exploting price differences across mulitple markets
 
 Most of these strategies involve some sort of arbitrage, taking advantage of difference in prices in two or more markets.
 

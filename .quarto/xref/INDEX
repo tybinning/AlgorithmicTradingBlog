@@ -49,5 +49,8 @@
   },
   "posts/AWS_Implementation/AWS_applied.qmd": {
     "AWS_applied.html": "b2c09595"
+  },
+  "posts/AWS_lambda_schedule/AWS_Lambda.qmd": {
+    "AWS_Lambda.html": "9d3325bd"
   }
 }

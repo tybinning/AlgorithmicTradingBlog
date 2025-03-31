@@ -2,9 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/AWS_lambda_schedule/AWS_Lambda.html",
+      "/posts/AWS_Implementation/AWS_applied.html",
       "/posts/stat_arbitrage/stat_arb.html",
       "/posts/AlgoTrading/algotradingbasics.html",
-      "/posts/AWS_Implementation/AWS_applied.html",
       "/posts/Building_Dash/Building_Dash.html",
       "/posts/PossibleStrats/possible_strats.html"
     ]
