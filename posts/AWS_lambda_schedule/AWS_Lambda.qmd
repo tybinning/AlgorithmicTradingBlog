@@ -8,6 +8,7 @@ categories: [Trading, AWS, Lambda, EventBridger]
 ---
 
 # Intro
+
 EC2 instances can be expensive to run, expecially if left unchecked. As I am building a trading bot that is only going to be running during market hours. 
 
 To do this we will be using two different tools within the AWS space:

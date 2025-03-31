@@ -6,6 +6,9 @@ date: "2025-03-26"
 categories: [Trading, AWS, EC2]
 ---
 
+# Intro
+What are EC2 instances and how can we create them?
+
 # AWS 
 AWS stands for Amazon Web Services, they provide a number of cloud hosted services with inlcude cloud computing and database storage among other products.
 Our main focus is going to be on cloud computing and storage for the application with our trading bot.

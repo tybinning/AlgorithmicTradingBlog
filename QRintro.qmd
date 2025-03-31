@@ -9,9 +9,8 @@ format: html
 
 ::: {.g-col-6 .g-row-6}
 <div style="text-align: center; padding: 20px; margin: 10px; border-radius: 15px; border-width: 2px; border-color: white; border-style: solid; background-color: #593196";">
-
 <a href="#" style="text-decoration: none; color: white;">
-<h3>Live Demo</h3>
+<h2>Live Demo</h2>
 Click this link to view my live demo!
 </a>
 
@@ -20,9 +19,8 @@ Click this link to view my live demo!
 
 ::: {.g-col-6 .g-row-6}
 <div style="text-align: center; padding: 20px; margin: 10px; border-radius: 15px; border-width: 2px; border-color: white; border-style: solid; background-color: #593196";>
-
 <a href="/index.qmd" style="text-decoration: none; color: white;">
-<h3>Blog</h3>
+<h2>Blog</h2>
 Click this link to learn more about my project!
 </a>
 
