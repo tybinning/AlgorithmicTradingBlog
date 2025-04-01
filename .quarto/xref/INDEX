@@ -52,5 +52,8 @@
   },
   "posts/AWS_lambda_schedule/AWS_Lambda.qmd": {
     "AWS_Lambda.html": "9d3325bd"
+  },
+  "posts/schwab_api/schwab_api.qmd": {
+    "schwab_api.html": "ea6ca4d6"
   }
 }
