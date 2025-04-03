@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tyler Binning">
-<meta name="dcterms.date" content="2025-02-19">
+<meta name="dcterms.date" content="2025-04-03">
 
-<title>Algorithmic Trading Blog - Algorithmic Trading Basics</title>
+<title>Algorithmic Trading Blog - Dash Demo Explained</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,10 +112,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Algorithmic Trading Basics</h1>
+      <h1 class="title">Dash Demo Explained</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Trading Bot</div>
-                <div class="quarto-category">Basics</div>
+                <div class="quarto-category">Dash</div>
+                <div class="quarto-category">Streaming</div>
               </div>
                   </div>
   </div>
@@ -133,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 19, 2025</p>
+        <p class="date">April 3, 2025</p>
       </div>
     </div>
     
@@ -151,47 +151,24 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Algorithmic Trading is automated trading at it’s core.</p>
-<section id="what-is-algorithmic-trading" class="level1">
-<h1>What is Algorithmic Trading?</h1>
-<p>Algorithmic Trading is essentually the proccess of automating a trading strategy. This has a few perks:</p>
-<ul>
-<li>Takes out human error</li>
-<li>Allows for time intensive strategies</li>
-<li>Larger Analysiss</li>
-</ul>
-<section id="human-error" class="level2">
-<h2 class="anchored" data-anchor-id="human-error">Human Error</h2>
-<p>When trading a stock or security the goal is to make profit from when you enter the position to where you exit. If you are in a long position you will most likely have some sort of exit indicator that lets you kno when you need to sell, if the stock is still increasing in price that could be difficult.</p>
-<p>The opposite can be true as well, if your stock is dropping in price and you sell prematurely the stock may rise after causing greif and loss.</p>
-<section id="fomo" class="level3">
-<h3 class="anchored" data-anchor-id="fomo">FOMO</h3>
-<p>FOMO stands for the <strong>Fear Of Missing Out</strong>. This often comes into play when an individual sees stocks breaking record highs and have been increasing nonstop for the last few time periods, they decide to buy thinking this will never stop. The stock could continue to increase or it could start dropping.</p>
-<p>When the stock starts to drop people will hold on longer than they should, hoping that the price will rise again until they final sell, just to see the stock continuing to rise a few days after they sell.</p>
-<p>We as human beings get into patterns of hope and dispare, having a machine handle trading allows us to take an emotional backseat and trust in the process that we have created.</p>
-</section>
-</section>
-<section id="allows-for-high-frequency-trading" class="level2">
-<h2 class="anchored" data-anchor-id="allows-for-high-frequency-trading">Allows for High Frequency Trading</h2>
-<p>With the use of Algorithmic Trading and Automated trading we can use strategies that wouldn’t be feasible without it. Due to the time and speed of the trade taking place. A few strategies that take advantage of this are:</p>
-<ul>
-<li><p><strong>Arbitrage:</strong> Exploiting price differences between an index and its futures or underlying components</p></li>
-<li><p><strong>Order Book Imbalance:</strong> Trading based on real-time buy and sell order imbalances</p></li>
-<li><p><strong>Cross-Market Arbitrage:</strong> Exploting price differences across mulitple markets</p></li>
-</ul>
-<p>Most of these strategies involve some sort of arbitrage, taking advantage of difference in prices in two or more markets.</p>
-</section>
-<section id="large-analysis-minimal-analysis-paralysis" class="level2">
-<h2 class="anchored" data-anchor-id="large-analysis-minimal-analysis-paralysis">Large Analysis ( Minimal Analysis Paralysis)</h2>
-<p>When creating an Algorithmic Trading Bot you have the oppurtunity to allow it to evaluate multiple indicators, and resources before deciding on a strategy or a trade. It gives us more computing power within a smaller amount of time.</p>
-<section id="analysis-paralysis" class="level3">
-<h3 class="anchored" data-anchor-id="analysis-paralysis">Analysis Paralysis</h3>
-<p>Analysis Paralysis is a concept of analyzing too so much data as to the point where you feel paralyzed not knowing with direction to go or how to react, as there is always a great degree of unknown price movement, expecially within stock prices. Sometimes you need to take action even when unsure of the result, Algo Trading aids in this behavior, allowing you to pull the trigger and take action.</p>
-</section>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>There are many benefits of algorithmic trading, I prefer the concept of autonomy, and the prevention or analysis paraylysis. The biggest flaw an algorithmic trading bot has, is the flaws that we bake into it. This can amplify our investments in a positive or a negative direction. It is up to us how we build them.</p>
+<section id="dash-streaming-demonstration" class="level1">
+<h1>Dash Streaming Demonstration</h1>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The strategy use in this demonstration is a simple strategy that displays the ‘EUR/USD’ forex market, which is the Euro to U.S. Dollar. Although the basis of my studies over this project were not specifically over foreign exchange trading strategies, due to the datetime of the Research and Creative Works conference demonstrating the strategy with other securities wouldn’t prove beneficial.</p>
+<p>The strategy being decided is extremely simple, we use and rolling moving average, or an exponetial moving average which weights the latest values for increase reactivity.</p>
+<p>Criteria for completion of a trade: <strong>BUY:</strong> - price crosses over the moving average, moving from below to above. <strong>SELL:</strong> - pricc crosses under the moving average, moving from above to below.</p>
+<p>When there is a BUY signal we: - Close out past short sells - Enter a long position</p>
+<p>When there is a SELL signal we: - Close out past long positions - Enter a short position</p>
+<p>I chose this strategy for demonstration purposes as it would have an increased number of trades, being able to demonstrate live portfolio performance.</p>
+<p>This strategy is not investing advice, merely for the purposes of a streaming demonstration.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../..\posts/Demo/demo_dash_pci.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">‘Demo Image’</figcaption>
+</figure>
+</div>
+<p>As you can see in the image above there is a two graphs within this simple demo, one displaying the live updated price and the other displaying the cumulative returns of the trading strategy.</p>
 
 
 </section>

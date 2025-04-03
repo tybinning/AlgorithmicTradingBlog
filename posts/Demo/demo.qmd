@@ -1,0 +1,39 @@
+---
+title: "Dash Demo Explained"
+author: "Tyler Binning"
+format: html
+date: "2025-04-03"
+categories: [Dash, Streaming]
+---
+
+# Dash Streaming Demonstration 
+
+## Introduction
+
+The strategy use in this demonstration is a simple strategy that displays the 'EUR/USD' forex market, which is the Euro to U.S. Dollar.
+Although the basis of my studies over this project were not specifically over foreign exchange trading strategies, due to the datetime of the Research and Creative Works conference demonstrating the strategy with other securities wouldn't prove beneficial.
+
+The strategy being decided is extremely simple, we use and rolling moving average, or an exponetial moving average which weights the latest values for increase reactivity. 
+
+Criteria for completion of a trade:
+    **BUY:** 
+    - price crosses over the moving average, moving from below to above.
+    **SELL:**
+    - pricc crosses under the moving average, moving from above to below.
+
+When there is a BUY signal we:
+- Close out past short sells
+- Enter a long position
+
+When there is a SELL signal we:
+- Close out past long positions
+- Enter a short position
+
+I chose this strategy for demonstration purposes as it would have an increased number of trades, being able to demonstrate live portfolio performance.
+
+This strategy is not investing advice, merely for the purposes of a streaming demonstration.
+
+!['Demo Image'](/posts/Demo/demo_dash_pci.png)
+
+As you can see in the image above there is a two graphs within this simple demo, one displaying the live updated price and the other displaying the cumulative returns of the trading strategy.
+

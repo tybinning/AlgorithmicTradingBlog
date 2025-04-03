@@ -58,5 +58,14 @@
   },
   "posts/GeneralOverview/generaloverview.qmd": {
     "generaloverview.html": "18e0eaec"
+  },
+  "posts/personallearningdev/personallearning.qmd": {
+    "personallearning.html": "9eb27756"
+  },
+  "posts/Demo/demo.qmd": {
+    "demo.html": "46d1522f"
+  },
+  "docs/posts/Demo/demo.qmd": {
+    "demo.html": "1377ddc0"
   }
 }

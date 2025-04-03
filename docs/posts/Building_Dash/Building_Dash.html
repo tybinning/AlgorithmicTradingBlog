@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -151,22 +185,81 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="basic-components" class="level1">
-<h1>Basic Components</h1>
+<section id="building-a-simple-dash-app" class="level1">
+<h1>Building a Simple Dash App</h1>
+<p>Dash is a powerful Python framework for building interactive web applications. It is particularly useful for data visualization and dashboard applications, making it a popular choice among data scientists and analysts. In this post, we’ll walk through the process of building a simple Dash app, covering its basic components, formatting, callbacks, and styling.</p>
+<section id="basic-components" class="level2">
+<h2 class="anchored" data-anchor-id="basic-components">Basic Components</h2>
+<p>A Dash app consists of two main parts:</p>
+<ol type="1">
+<li><strong>Layout</strong> – Defines the structure of the application, including the placement of components such as graphs, dropdowns, and buttons.</li>
+<li><strong>Callbacks</strong> – Enable interactivity by updating components dynamically based on user input.</li>
+</ol>
+<p>To get started, install Dash if you haven’t already:</p>
+<pre><code>pip install dash</code></pre>
+<p>A simple Dash app structure:</p>
+<pre><code>import dash
+from dash import dcc, html
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+    html.H1("My First Dash App"),
+    dcc.Input(id="input-box", type="text", placeholder="Enter text"),
+    html.Button("Submit", id="submit-button", n_clicks=0),
+    html.Div(id="output")
+])
+
+if __name__ == "__main__":
+    app.run(debug=True)</code></pre>
 </section>
-<section id="formating" class="level1">
-<h1>Formating</h1>
+<section id="formatting" class="level2">
+<h2 class="anchored" data-anchor-id="formatting">Formatting</h2>
+<p>Formatting in Dash is primarily handled using HTML-like components from <code>dash.html</code>. You can structure your layout using <code>Div</code>, <code>H1</code>, <code>P</code>, and other elements:</p>
+<pre><code>html.Div([
+    html.H1("Dashboard Title", style={"textAlign": "center"}),
+    html.P("This is a paragraph with some description.")
+])</code></pre>
+<p>For organizing components, Dash provides <code>dash.dcc</code> elements like <code>Tabs</code>, <code>Dropdown</code>, and <code>Graph</code>. Example:</p>
+<pre><code>dcc.Dropdown(
+    id="dropdown",
+    options=[{"label": "Option 1", "value": "1"},
+             {"label": "Option 2", "value": "2"}],
+    value="1"
+)</code></pre>
 </section>
-<section id="security" class="level1">
-<h1>Security</h1>
+<section id="callbacks" class="level2">
+<h2 class="anchored" data-anchor-id="callbacks">Callbacks</h2>
+<p>Callbacks allow interactivity in Dash apps by linking input and output components. A simple example of updating text dynamically:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> dash.dependencies <span class="im">import</span> Input, Output</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">@app.callback</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    Output(<span class="st">"output"</span>, <span class="st">"children"</span>),</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    Input(<span class="st">"input-box"</span>, <span class="st">"value"</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> update_output(value):</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="ss">f"You entered: </span><span class="sc">{</span>value<span class="sc">}</span><span class="ss">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This ensures that whenever a user types in the input box, the <code>output</code> Div updates with the new text.</p>
 </section>
-<section id="callbacks" class="level1">
-<h1>Callbacks</h1>
-</section>
-<section id="styling" class="level1">
-<h1>Styling</h1>
+<section id="styling" class="level2">
+<h2 class="anchored" data-anchor-id="styling">Styling</h2>
+<p>Dash apps can be styled using:</p>
+<ol type="1">
+<li><p><strong>Inline CSS</strong>:</p>
+<pre><code>html.Div("Styled text", style={"color": "blue", "fontSize": "20px"})</code></pre></li>
+<li><p><strong>External Stylesheets</strong>:</p>
+<pre><code>app = dash.Dash(__name__, external_stylesheets=["https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.0/minty/bootstrap.min.css"])</code></pre></li>
+<li><p><strong>Dash <code>dash.dash_table.DataTable</code> Styling</strong>:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>dash.dash_table.DataTable(</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    style_header<span class="op">=</span>{<span class="st">"backgroundColor"</span>: <span class="st">"black"</span>, <span class="st">"color"</span>: <span class="st">"white"</span>},</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    style_data<span class="op">=</span>{<span class="st">"backgroundColor"</span>: <span class="st">"lightgrey"</span>, <span class="st">"color"</span>: <span class="st">"black"</span>}</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+<p>By combining these elements, you can create a well-structured, interactive, and visually appealing Dash app. Try customizing different components to see how they work together!</p>
+<p>Happy coding!</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

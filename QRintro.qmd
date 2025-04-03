@@ -18,6 +18,16 @@ Click this link to view my live demo!
 :::
 
 ::: {.g-col-6 .g-row-6}
+<div style="text-align: center; padding: 20px; margin: 10px; border-radius: 15px; border-width: 2px; border-color: white; border-style: solid; background-color: #593196";">
+<a href="/Demo/demo.qmd" style="text-decoration: none; color: white;">
+<h2>Demo Explaination</h2>
+Click this link if demo isn't working, or for further explaination!
+</a>
+
+</div>
+:::
+
+::: {.g-col-6 .g-row-6}
 <div style="text-align: center; padding: 20px; margin: 10px; border-radius: 15px; border-width: 2px; border-color: white; border-style: solid; background-color: #593196";>
 <a href="/index.qmd" style="text-decoration: none; color: white;">
 <h2>Blog</h2>

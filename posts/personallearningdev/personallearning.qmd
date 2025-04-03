@@ -6,12 +6,60 @@ date: "2025-04-03"
 categories: [Experience]
 ---
 
-# Overall Learning and Experience
+# Overall Learning and Experience  
 
-## Introduction
+## Introduction  
+Working with **Schwab’s API** for algorithmic trading provided hands-on experience in developing an automated trading system. From fetching real-time market data to executing trades and optimizing strategy performance, this project involved a combination of technical skills, problem-solving, and real-world application of financial concepts.  
 
-## Skills Learned
+Throughout this journey, I encountered challenges related to **API authentication, time series data processing, and trade execution**, which helped refine my coding skills and improve my understanding of financial market behavior. This experience also strengthened my ability to think critically, troubleshoot errors, and make data-driven decisions.  
 
+## Skills Learned  
 
-## Soft Skills Gained
+### **1. API Integration & Data Handling**  
+- Successfully **authenticated and connected** to Schwab’s API using OAuth 2.0.  
+- Implemented **data requests** to fetch historical and real-time stock market data.  
+- Optimized API calls to handle **rate limits and response errors efficiently**.  
 
+### **2. Working with Time Series Data**  
+- Collected and **preprocessed historical price data** for backtesting.  
+- Used **moving averages,Keltner Channels and Bollinger Bands** for feature engineering.  
+- Applied **time series smoothing techniques** to reduce noise and improve trend detection.  
+- Resampled data for different time intervals (e.g., converting minute-level data to hourly or daily).  
+- Used **autocorrelation and stationarity tests** to determine market trends and seasonality.  
+
+### **3. Algorithmic Trading Development**  
+- Designed and implemented **momentum and mean-reversion trading strategies**.  
+- Built a **backtesting framework** to evaluate strategy performance before live deployment.  
+- Integrated **real-time order execution**, allowing automated buy/sell decisions based on market signals.  
+
+### **4. Cloud Deployment & Automation**  
+- Deployed the trading bot on **AWS EC2** to run continuously.  
+- Automated trade execution and data collection with **CronJobs and AWS Lambda**.  
+- Stored market data in a **structured database** for further analysis.  
+
+### **5. Error Handling & Risk Management**  
+- Implemented **fail-safes for trade execution** to avoid unintended orders.  
+- Developed logging mechanisms to track **API response errors and execution failures**.  
+- Applied **risk management rules**, such as stop-loss limits and position sizing, to minimize losses.  
+
+## Soft Skills Gained  
+
+### **1. Problem-Solving & Debugging**  
+- Faced and resolved authentication errors related to OAuth 2.0 token expiration.  
+- Debugged **incomplete or missing data** in time series datasets.  
+- Optimized **data retrieval and preprocessing** to handle large datasets efficiently.  
+
+### **2. Adaptability & Learning Mindset**  
+- Learned **Schwab’s API documentation** from scratch and applied it effectively.  
+- Adapted strategies based on real-time market conditions and backtesting results.  
+- Explored **alternative APIs** and data sources to enhance decision-making.  
+
+### **3. Time Management & Project Organization**  
+- Balanced multiple components, including **data collection, strategy development, and deployment**.  
+- Created a structured workflow to ensure progress in **both coding and financial analysis**.  
+- Managed time effectively to refine and iterate trading strategies based on new insights.  
+
+## Conclusion  
+Working with **Schwab’s API** has been a valuable learning experience, combining **time series analysis, real-time data processing, and automated trading**. By integrating **historical data, algorithmic strategies, and cloud automation**, I have gained a strong foundation in **financial technology and quantitative trading**.  
+
+Moving forward, I plan to enhance this system with **machine learning for trade filtering, improved risk management techniques, and additional data sources** to further refine strategy performance. This project has not only deepened my technical skills but also reinforced the importance of continuous learning and adaptability in algorithmic trading.  

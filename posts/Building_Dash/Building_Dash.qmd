@@ -7,10 +7,102 @@ categories: [Trading, Visuals]
 image: "Plotly-logo.png"
 ---
 
-# Basic Components
+# Building a Simple Dash App
 
-# Formating 
+Dash is a powerful Python framework for building interactive web applications. It is particularly useful for data visualization and dashboard applications, making it a popular choice among data scientists and analysts. In this post, we'll walk through the process of building a simple Dash app, covering its basic components, formatting, callbacks, and styling.
 
-# Callbacks
+## Basic Components
 
-# Styling
+A Dash app consists of two main parts:
+
+1. **Layout** – Defines the structure of the application, including the placement of components such as graphs, dropdowns, and buttons.
+2. **Callbacks** – Enable interactivity by updating components dynamically based on user input.
+
+To get started, install Dash if you haven’t already:
+
+```
+pip install dash
+```
+
+A simple Dash app structure:
+
+```
+import dash
+from dash import dcc, html
+
+app = dash.Dash(__name__)
+
+app.layout = html.Div([
+    html.H1("My First Dash App"),
+    dcc.Input(id="input-box", type="text", placeholder="Enter text"),
+    html.Button("Submit", id="submit-button", n_clicks=0),
+    html.Div(id="output")
+])
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+## Formatting
+
+Formatting in Dash is primarily handled using HTML-like components from `dash.html`. You can structure your layout using `Div`, `H1`, `P`, and other elements:
+
+```
+html.Div([
+    html.H1("Dashboard Title", style={"textAlign": "center"}),
+    html.P("This is a paragraph with some description.")
+])
+```
+
+For organizing components, Dash provides `dash.dcc` elements like `Tabs`, `Dropdown`, and `Graph`. Example:
+
+```
+dcc.Dropdown(
+    id="dropdown",
+    options=[{"label": "Option 1", "value": "1"},
+             {"label": "Option 2", "value": "2"}],
+    value="1"
+)
+```
+
+## Callbacks
+
+Callbacks allow interactivity in Dash apps by linking input and output components. A simple example of updating text dynamically:
+
+```python
+from dash.dependencies import Input, Output
+
+@app.callback(
+    Output("output", "children"),
+    Input("input-box", "value")
+)
+def update_output(value):
+    return f"You entered: {value}"
+```
+
+This ensures that whenever a user types in the input box, the `output` Div updates with the new text.
+
+## Styling
+
+Dash apps can be styled using:
+
+1. **Inline CSS**:
+   ```
+   html.Div("Styled text", style={"color": "blue", "fontSize": "20px"})
+   ```
+2. **External Stylesheets**:
+   ```
+   app = dash.Dash(__name__, external_stylesheets=["https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.0/minty/bootstrap.min.css"])
+   ```
+3. **Dash `dash.dash_table.DataTable` Styling**:
+   ```python
+   dash.dash_table.DataTable(
+       style_header={"backgroundColor": "black", "color": "white"},
+       style_data={"backgroundColor": "lightgrey", "color": "black"}
+   )
+   ```
+
+By combining these elements, you can create a well-structured, interactive, and visually appealing Dash app. Try customizing different components to see how they work together!
+
+Happy coding!
+
