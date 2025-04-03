@@ -107,13 +107,6 @@ $$
 H_a: K = K_0 + 1
 $$
 
-## Model Dev
-
-## Trade Execution
-Q's: 
-Can we leverage options?
-
-## Risk Management
 
 # References
 https://www.cqf.com/blog/quant-finance-101/what-is-statistical-arbitrage 
