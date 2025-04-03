@@ -1,0 +1,21 @@
+---
+title: "Schwab API and Data Collection"
+author: "Tyler Binning"
+format: html
+date: "2025-03-31"
+categories: [API, Data]
+---
+
+# Schwab Developer API
+
+
+## Intro to Schwab's API 
+Charles Schwab has an API for developers. In order to gain access to the Schwab API you need to apply for an Individual trader account. After being approved there 
+
+## Getting API Access
+
+## Fetching Historical Market Data
+
+## Placing and Managing Trades
+
+## Streaming Data

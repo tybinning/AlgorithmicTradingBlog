@@ -16,7 +16,7 @@ This has a few perks:
 
 - Takes out human error
 - Allows for time intensive strategies
-- Larger Analysis
+- Larger Analysiss
 
 ## Human Error
 

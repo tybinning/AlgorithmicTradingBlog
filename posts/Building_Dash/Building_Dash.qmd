@@ -11,8 +11,6 @@ image: "Plotly-logo.png"
 
 # Formating 
 
-# Security
-
 # Callbacks
 
 # Styling

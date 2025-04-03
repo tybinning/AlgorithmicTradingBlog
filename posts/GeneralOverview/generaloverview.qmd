@@ -1,0 +1,89 @@
+---
+title: "Building an Algorithmic Trading Bot: My Senior Capstone Journey"
+author: "Tyler Binning"
+format: html
+date: "2025-04-02"
+categories: [Overview]
+---
+
+# Building an Algorithmic Trading System: Backtesting, Real-Time Data, and AWS Deployment  
+
+## Introduction  
+Algorithmic trading has become a powerful tool for automating financial strategies, leveraging historical and real-time data to make informed trading decisions. In this project, I developed and backtested trading strategies, integrated live market data, and created an interactive dashboard to visualize performance. Additionally, I deployed the system on AWS for scalability and automation.  
+
+With the database setup completed, my next steps focused on portfolio management and machine learning integration to enhance trade selection and risk management.  
+
+## Objectives  
+This project revolved around several core components:  
+
+1. **Trading Strategies** – Implementing momentum-based, mean reversion, and statistical arbitrage techniques.  
+2. **Backtesting Framework** – Designing a custom backtesting engine to evaluate strategy performance.  
+3. **Streaming Data Integration** – Incorporating live market data for real-time decision-making.  
+4. **Dashboard Development** – Building an interactive dashboard using Plotly Dash to track strategy performance.  
+5. **AWS Hosting & Automation** – Deploying the system on AWS EC2, automating processes with Lambda, and scheduling tasks with CronJobs.  
+6. **Database Management** – Storing and processing market data efficiently for future analysis.  
+7. **Machine Learning & Portfolio Optimization** (Future Work) – Planning to implement ML models to enhance trading decisions and portfolio risk management.  
+
+
+## Methodology  
+
+### Collected & Processed Market Data  
+A critical component of this trading system was access to high-quality market data. I sourced historical and real-time data from **the Federal Reserve St. Louis and the Charles Schwab API**. After collection, I preprocessed the data to generate key indicators such as **moving averages, Relative Strength Index (RSI), and volatility measures**, which were essential for strategy development.  
+
+Additionally, I integrated live streaming data to enable **real-time analysis**, allowing the system to react dynamically to market conditions.  
+
+### Developed Trading Strategies  
+The system incorporated three primary trading strategies:  
+
+- **Momentum Trading:** Capitalized on trend strength by entering trades in the direction of price movement.  
+- **Mean Reversion:** Identified assets that had deviated significantly from their historical average and executed trades based on their expected return to the mean.  
+- **Statistical Arbitrage:** Detected co-integrated asset pairs and exploited short-term pricing inefficiencies.  
+
+These strategies were backtested and analyzed. 
+
+### Built a Custom Backtesting Framework  
+To ensure strategies were effective before going live, I built a **custom backtesting engine**. This framework simulated trades using historical data, calculating performance metrics such as:  
+
+- **Profit & Loss (P&L):** Measured overall returns.  
+- **Drawdowns:** Evaluated risk by assessing peak-to-trough declines.  
+- **Sharpe Ratio:** Determined risk-adjusted performance.  
+
+With these metrics, I fine-tuned strategies, optimizing parameters to improve performance under real market conditions.  
+
+### Integrated Streaming Data & Real-Time Trading  
+Real-time trading required a continuous stream of market data. To achieve this, I integrated APIs that fed live data into the system, enabling it to monitor price movements and execute trades dynamically. Simulated live market conditions allowed me to stress-test the strategies before real deployment.  
+
+### Developed an Interactive Dashboard  
+I built a **Plotly Dash-based dashboard** to visualize key trading insights. The dashboard allowed:  
+
+- **Real-time performance monitoring** of trading strategies.  
+- **Interactive data exploration** to tweak parameters.  
+- **Custom visualizations** to track historical and live market trends.  
+
+This feature ensured that trading performance was transparent and easily interpretable.  
+
+### Deployed on AWS & Automated Processes  
+To scale the project and automate key processes, I deployed the system on **AWS EC2**. Key AWS components included:  
+
+- **AWS Lambda:** Automated periodic tasks, such as fetching new market data.  
+- **CronJobs:** Scheduled backtests and other computations at defined intervals.  
+
+Hosting the system on AWS ensured it remained operational, even when handling large volumes of live data.  
+
+### Set Up a Structured Database  
+I implemented a structured database to store historical, real-time, and streaming market data efficiently. This setup enabled rapid data retrieval, essential for both **backtesting and live trading execution**. Additionally, this database laid the foundation for future **machine learning models** to enhance trade filtering and portfolio optimization.  
+
+## Future Work  
+As the project progresses, I plan to integrate:  
+
+1. **Machine Learning Models** – Using AI to filter trades and improve portfolio allocation.  
+2. **Alternative Data Sources** – Exploring sentiment analysis, news feeds, and alternative indicators to refine trading signals.  
+3. **Dashboard Enhancements** – Adding more interactive features for performance tracking.  
+4. **AWS Optimization** – Improving infrastructure efficiency for cost-effectiveness.  
+
+These advancements will transform the trading system into a more adaptive, intelligent, and automated solution.  
+
+## Conclusion  
+This project established a strong foundation for **algorithmic trading**, with a custom-built backtesting framework, real-time market data integration, and an interactive dashboard. Hosting on AWS ensured scalability, while the next phase will focus on leveraging machine learning for **enhanced decision-making and portfolio management**.  
+
+Stay tuned for further updates as I refine strategies and integrate new features!  

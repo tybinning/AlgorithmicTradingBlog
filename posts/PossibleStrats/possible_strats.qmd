@@ -8,4 +8,8 @@ categories: [Trading]
 
 # Basic Strategies
 
-This po
+## Mean Reversion
+
+## Momentum 
+
+## Statistical Arbitrage
